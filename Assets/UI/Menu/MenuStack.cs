@@ -13,7 +13,10 @@ public class MenuStack : MonoBehaviour
 
     void Start()
     {
-        Push(initialStack);
+        if (initialStack != null)
+        {
+            Push(initialStack);
+        }
     }
 
     public void Push(GameObject menu)
