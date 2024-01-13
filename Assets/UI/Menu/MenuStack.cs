@@ -3,8 +3,11 @@ using UnityEngine;
 
 public class MenuStack : MonoBehaviour
 {
-    public Stack<GameObject> menuStack;
     public GameObject initialStack;
+    public bool pausable;
+    public GameObject pauseStack;
+
+    private Stack<GameObject> menuStack;
 
     public int Count => menuStack.Count;
 
@@ -19,13 +22,28 @@ public class MenuStack : MonoBehaviour
         {
             Push(initialStack);
         }
+        if(pausable)
+        {
+            Time.timeScale = 1f;
+        }
     }
 
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            Pop();
+            if(Count == 0)
+            {
+                if (pausable)
+                {
+                    Push(pauseStack);
+                    Time.timeScale = 0f;
+                }
+            }
+            else
+            {
+                Pop();
+            }
         }
     }
 
@@ -50,6 +68,9 @@ public class MenuStack : MonoBehaviour
         menuStack.Pop();
         if(Count != 0){
             Peek().SetActive(true);
+        }
+        if(pausable && Count == 0){
+            Time.timeScale = 1f;
         }
     }
 
