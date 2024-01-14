@@ -1,10 +1,10 @@
 public enum CorporationType
 {
-    Cloth,
-    Game,
-    Space,
-    Food,
-    Drug,
-    IT,
+    Clothing,
+    Games,
+    Aerospace,
+    Foodstuffs,
+    Medical,
+    Information,
     Tech,
 }
