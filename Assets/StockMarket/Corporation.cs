@@ -4,22 +4,22 @@ using UnityEngine;
 [Serializable]
 public class Corporation : INotifyPriceChanged
 {
-    private string _name; // 회사 이름
-    private CorporationType _type; // 회사 종류
-    private float _parValue; // 액면가
+    private string name; // 회사 이름
+    private CorporationType type; // 회사 종류
+    private float parValue; // 액면가
     
-    public string Name => _name;
-    public CorporationType Type => _type;
+    public string Name => name;
+    public CorporationType Type => type;
     public float ParValue
     {
-        get => _parValue;
+        get => parValue;
         set
         {
             // _parValue == value
-            if (Mathf.Abs(_parValue - value) < float.Epsilon) return;
+            if (Mathf.Abs(parValue - value) < float.Epsilon) return;
             
-            _parValue = value;
-            OnPriceChanged?.Invoke(_parValue);
+            parValue = value;
+            OnPriceChanged?.Invoke(parValue);
         }
     }
     
@@ -28,8 +28,8 @@ public class Corporation : INotifyPriceChanged
     
     public Corporation(string name, CorporationType type, float initialPrice)
     {
-        _name = name;
-        _type = type;
-        _parValue = initialPrice;
+        this.name = name;
+        this.type = type;
+        this.parValue = initialPrice;
     }
 }

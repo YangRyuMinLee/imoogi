@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class StockMarket : MonoBehaviour
 {
-    private List<Corporation> _corporations; 
+    private List<Corporation> corporations;
     
     public void Start()
     {
@@ -12,8 +12,8 @@ public class StockMarket : MonoBehaviour
 
     public void InitStockMarket()
     {
-        _corporations = new();
+        corporations = new();
     }
     
-    public List<Corporation> GetCorporations() => _corporations;
+    public List<Corporation> GetCorporations() => corporations;
 }
