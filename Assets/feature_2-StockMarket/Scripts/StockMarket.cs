@@ -13,10 +13,7 @@ public class StockMarket : MonoBehaviour
     public void InitStockMarket()
     {
         _corporations = new();
-        
-        // Get Data from (...)
-        StockMarketHistoryManager.Load();
     }
-
+    
     public List<Corporation> GetCorporations() => _corporations;
 }
