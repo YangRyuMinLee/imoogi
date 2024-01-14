@@ -26,7 +26,8 @@ public class Corporation
         this.parValue = initialPrice;
     }
 
-    public void Tick(){
+    public void Tick()
+    {
         parValue = Mathf.RoundToInt(parValue * UnityEngine.Random.Range(0.95f, 1.05f)); // Temporary Implementation
     }
 }
