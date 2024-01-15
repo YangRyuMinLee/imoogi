@@ -26,6 +26,7 @@ public class Game
 
     public Game(){
         shares = new();
+        cash = 1000000;
     }
 
     public void Tick()
