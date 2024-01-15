@@ -4,6 +4,7 @@ using System.Collections.Generic;
 [Serializable]
 public class Game
 {
+    public TimeProgress time;
     public int cash;
     public Dictionary<Corporation, int> shares;
     public IEnumerable<Corporation> Corporations => shares.Keys;
@@ -25,6 +26,11 @@ public class Game
 
     public int Assets => ShareAssets + cash;
 
+    public Game(){
+        shares = new();
+        remainingEvents = new();
+        cash = 1000000;
+    }
 
     public void Tick()
     {
@@ -32,5 +38,12 @@ public class Game
         {
             i.Tick();
         }
+        time.progress++;
+    }
+
+    public void TriggerEvent(Event e)
+    {
+        e.Act(this);
+        remainingEvents.Enqueue(e);
     }
 }

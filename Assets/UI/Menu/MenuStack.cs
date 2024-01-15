@@ -83,7 +83,7 @@ public class MenuStack : MonoBehaviour
         if(background != null){
             background.SetActive(Count != 0);
         }
-        if(Peek() != null){
+        if(Count != 0){
             Peek().SetActive(true);
         }
 
