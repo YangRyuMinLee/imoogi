@@ -8,6 +8,8 @@ public class Game
     public Dictionary<Corporation, int> shares;
     public IEnumerable<Corporation> Corporations => shares.Keys;
 
+    public Queue<Event> remainingEvents;
+
     public int ShareAssets
     {
         get
