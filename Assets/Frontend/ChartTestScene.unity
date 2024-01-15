@@ -1076,9 +1076,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cbfc64812af4009850f30612ec0187a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentCorporation:
+    maxIncreaseRate: 0.1
+    minIncreaseRate: -0.1
+    priceHistory: 
   chart: {fileID: 2044733915}
   verticalPriceIndicator: {fileID: 1101553815}
-  gameManager: {fileID: 1273061217}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

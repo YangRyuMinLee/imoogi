@@ -21,11 +21,9 @@ public class GameManager : MonoBehaviour
         public CorporationType type;
         public int initialPrice;
     }
-    [SerializeField] private List<CorporationData> testCorporations;
+    public List<CorporationData> testCorporations;
 
-    #endregion
-    
-    private void Start()
+    private void Awake()
     {
         game = new Game();
 
@@ -34,7 +32,12 @@ public class GameManager : MonoBehaviour
             Corporation corporation = new(corpData.name, corpData.type, corpData.initialPrice);
             game.shares.Add(corporation, 0);
         }
-        
+    }
+
+    #endregion
+    
+    private void Start()
+    {
         UpdateDateText();
     }
 

@@ -1,20 +1,18 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 
 public class VerticalPriceIndicatorManager : MonoBehaviour
 {
     [SerializeField] private List<TextMeshProUGUI> indicators;
-
-    private void Start()
-    {
-        UpdateIndicator(0, 10000);
-    }
     
-
-    public void UpdateIndicator(int min, int max)
+    public void UpdateIndicator(IEnumerable<int> history)
     {
+        int min = history.Min();
+        int max = history.Max();
+        
         int size = indicators.Count;
         float d = 0;
         float interval = 1f / (size-1);
