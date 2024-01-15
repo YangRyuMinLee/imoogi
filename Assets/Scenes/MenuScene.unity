@@ -235,7 +235,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 958816395641824318, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.0006779661
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 958816395641824318, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -243,11 +243,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 958816395641824318, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.9979661
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 958816395641824318, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.99999994
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4441884916139855896, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -511,6 +511,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 972387252}
     m_Modifications:
+    - target: {fileID: 204192746373993680, guid: ac7b319dc998d49d88f76a52e0d775a3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 204192746373993680, guid: ac7b319dc998d49d88f76a52e0d775a3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 204192746373993680, guid: ac7b319dc998d49d88f76a52e0d775a3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 204192746373993680, guid: ac7b319dc998d49d88f76a52e0d775a3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1641420931025588194, guid: ac7b319dc998d49d88f76a52e0d775a3, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -591,9 +607,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2239945668510707270, guid: ac7b319dc998d49d88f76a52e0d775a3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2239945668510707270, guid: ac7b319dc998d49d88f76a52e0d775a3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2239945668510707270, guid: ac7b319dc998d49d88f76a52e0d775a3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2239945668510707270, guid: ac7b319dc998d49d88f76a52e0d775a3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3263862283340465951, guid: ac7b319dc998d49d88f76a52e0d775a3, type: 3}
       propertyPath: m_Name
       value: Main
+      objectReference: {fileID: 0}
+    - target: {fileID: 5135935897258623634, guid: ac7b319dc998d49d88f76a52e0d775a3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5135935897258623634, guid: ac7b319dc998d49d88f76a52e0d775a3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5135935897258623634, guid: ac7b319dc998d49d88f76a52e0d775a3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5135935897258623634, guid: ac7b319dc998d49d88f76a52e0d775a3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8985139497833111363, guid: ac7b319dc998d49d88f76a52e0d775a3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -677,6 +725,10 @@ PrefabInstance:
       propertyPath: initialStack
       value: 
       objectReference: {fileID: 988081183}
+    - target: {fileID: 677196859223134736, guid: 961160a5e0a1f39699bd20f25d56752e, type: 3}
+      propertyPath: retainInitial
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5928174129460393983, guid: 961160a5e0a1f39699bd20f25d56752e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
