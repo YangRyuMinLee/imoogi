@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Event", menuName = "Event/Event")]
-class Event : ScriptableObject
+public class Event : ScriptableObject
 {
     [Header("Global")]
     public Sprite headerSprite;

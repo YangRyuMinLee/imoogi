@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New CorporationEvent", menuName = "Event/CorporationEvent")]
-class CorporationEvent : Event {
+public class CorporationEvent : Event {
 
     public CorporationType type;
     public float rate;
