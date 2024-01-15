@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,7 +20,7 @@ public class ChartDrawer : MonoBehaviour
         image.texture = texture;
     }
 
-    public void DrawChart(List<int> history)
+    public void DrawChart(List<int> history, int currentPrice)
     {
         texture.filterMode = FilterMode.Point;
         
@@ -67,8 +68,36 @@ public class ChartDrawer : MonoBehaviour
                 texture.SetPixel(pixel.Item1, pixel.Item2, color);
             }
         }
-        // last
 
+        {
+            int x0 = (int)(interval * size-1);
+            int y0 = FitPriceToHeight(min, max, history[size-1]);
+            
+            int x1 = (int)(interval * size)-1;
+            int y1 = FitPriceToHeight(min, max, currentPrice);
+            
+            Color color = default;
+            if (y0 > y1)
+            {
+                color = Color.blue;
+            }
+            else if(y0 < y1)
+            {
+                color = Color.red;
+            }
+            else
+            {
+                color = Color.black;
+            }
+
+            List<(int, int)> line = InterpolateLinePixels((x0, y0), (x1, y1));
+            foreach (var pixel in line)
+            {
+                texture.SetPixel(pixel.Item1, pixel.Item2, color);
+            }
+        }
+        
+        // last
         texture.Apply();
     }
 

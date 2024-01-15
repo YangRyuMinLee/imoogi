@@ -11,6 +11,7 @@ public class MainChartManager : MonoBehaviour
     [SerializeField] private ChartDrawer chart;
     [SerializeField] private VerticalPriceIndicatorManager verticalPriceIndicator;
     [SerializeField] private TextMeshProUGUI currentPriceText;
+    [SerializeField] private TextMeshProUGUI chartNameText;
     private GameManager gameManager;
     
     public enum FilterMode
@@ -47,9 +48,10 @@ public class MainChartManager : MonoBehaviour
                 break;
         }
         
-        chart.DrawChart(priceHistory);
+        chart.DrawChart(priceHistory, currentCorporation.ParValue);
         verticalPriceIndicator.UpdateIndicator(priceHistory);
         currentPriceText.text = currentCorporation.ParValue.ToString("#,##").Replace(',', ' ') + " 여의";
+        chartNameText.text = currentCorporation.Name;
     }
 
     public void SetFilterMode(string mode)
