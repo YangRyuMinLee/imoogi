@@ -23,7 +23,6 @@ public class Corporation
         this.parValue = initialPrice;
 
         priceHistory = new();
-        priceHistory.Add(parValue);
     }
 
     public void Tick()
