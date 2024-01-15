@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI cashText;
     [SerializeField] private TextMeshProUGUI assetText;
 
+    public delegate void TickEventHandler();
+    public TickEventHandler onTickEvent;
+
     #region TEST (REMOVE LATER)
 
     [Serializable]
@@ -48,6 +51,7 @@ public class GameManager : MonoBehaviour
         if(timer >= interval){
             timer -= interval;
             game.Tick();
+            onTickEvent?.Invoke();
             UpdateDateText();
         }
         UpdateMoneyText();

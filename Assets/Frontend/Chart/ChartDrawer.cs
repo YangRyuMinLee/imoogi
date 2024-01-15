@@ -15,41 +15,56 @@ public class ChartDrawer : MonoBehaviour
         int width = (int)image.rectTransform.rect.width;
         int height = (int)image.rectTransform.rect.height;
 
-        texture = new Texture2D(width, height, TextureFormat.RGBA32, true);
+        texture = new Texture2D(width, height, TextureFormat.RGBA32, false);
         image.texture = texture;
     }
 
     public void DrawChart(List<int> history)
     {
         texture.filterMode = FilterMode.Point;
-
+        
         int size = history.Count;
-        int interval = texture.width / size;
+        int width = texture.width;
+        int height = texture.height;
+        
+        float interval = width / (float)(size-1);
 
         int max = history.Max();
         int min = history.Min();
-
-        int width = (int)image.rectTransform.rect.width;
-        int height = (int)image.rectTransform.rect.height;
 
         // set white pixel
         for (int x = 0; x < width; x++)
             for (int y = 0; y < height; y++)
                 texture.SetPixel(x, y, Color.white);
 
-        for (int i = 0; i < size - 1; i++)
+        for (int i = 0; i < size - 2; i++)
         {
             int next = i + 1;
 
-            int x0 = interval * i;
+            int x0 = (int)(interval * i);
             int y0 = FitPriceToHeight(min, max, history[i]);
-            int x1 = interval * next;
+            
+            int x1 = (int)(interval * next);
             int y1 = FitPriceToHeight(min, max, history[next]);
+
+            Color color = default;
+            if (y0 > y1)
+            {
+                color = Color.blue;
+            }
+            else if(y0 < y1)
+            {
+                color = Color.red;
+            }
+            else
+            {
+                color = Color.black;
+            }
 
             List<(int, int)> line = InterpolateLinePixels((x0, y0), (x1, y1));
             foreach (var pixel in line)
             {
-                DrawBigPixel(pixel.Item1, pixel.Item2, Color.black);
+                texture.SetPixel(pixel.Item1, pixel.Item2, color);
             }
         }
         // last
@@ -88,18 +103,6 @@ public class ChartDrawer : MonoBehaviour
 
     private int FitPriceToHeight(int min, int max, int price)
     {
-        return (int)((price - min) / (float)(max - min) * image.rectTransform.rect.height);
-    }
-
-    private void DrawBigPixel(int x, int y, Color color)
-    {
-        int width = (int)image.rectTransform.rect.width;
-        int height = (int)image.rectTransform.rect.height;
-
-        texture.SetPixel(x, y, Color.black);
-        texture.SetPixel(x, y - 1, Color.black);
-
-        texture.SetPixel(x + 1, y, Color.black);
-        texture.SetPixel(x + 1, y - 1, Color.black);
+        return (int)((price - min) / (float)(max - min) * (texture.height-1));
     }
 }
