@@ -558,6 +558,10 @@ MonoBehaviour:
   dateText: {fileID: 2081996248}
   cashText: {fileID: 1038971269}
   assetText: {fileID: 1436612348}
+  testCorporations:
+  - name: "\uC6A9\uCC0C"
+    type: 0
+    initialPrice: 5000
 --- !u!224 &1406673105 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6158913537729531685, guid: 68fd9a645e9929e4eb8b011ee79a868c, type: 3}
@@ -1045,6 +1049,9 @@ PrefabInstance:
     - {fileID: 7222891724548683271, guid: 9085cc5101a604aaf984975762f876d2, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7151519627077570807, guid: 9085cc5101a604aaf984975762f876d2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6397860651000905157}
     - targetCorrespondingSourceObject: {fileID: 7727346513026929622, guid: 9085cc5101a604aaf984975762f876d2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2044733915}
@@ -1052,6 +1059,26 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1101553815}
   m_SourcePrefab: {fileID: 100100000, guid: 9085cc5101a604aaf984975762f876d2, type: 3}
+--- !u!1 &6397860651000905156 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7151519627077570807, guid: 9085cc5101a604aaf984975762f876d2, type: 3}
+  m_PrefabInstance: {fileID: 6397860651000905155}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6397860651000905157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6397860651000905156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cbfc64812af4009850f30612ec0187a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chart: {fileID: 2044733915}
+  verticalPriceIndicator: {fileID: 1101553815}
+  gameManager: {fileID: 1273061217}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

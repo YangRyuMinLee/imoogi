@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
         public CorporationType type;
         public int initialPrice;
     }
-    private List<CorporationData> testCorporations;
+    [SerializeField] private List<CorporationData> testCorporations;
 
     #endregion
     
