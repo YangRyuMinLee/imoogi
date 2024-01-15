@@ -10,57 +10,53 @@ public class ChartDrawer : MonoBehaviour
     [SerializeField] private RawImage image;
     private Texture2D texture;
 
-    //for test
-    [SerializeField] private List<int> testHistory;
-
     private void Start()
     {
         int width = (int)image.rectTransform.rect.width;
         int height = (int)image.rectTransform.rect.height;
-        
-        texture = new Texture2D(210, 140, TextureFormat.ARGB32, false);
+
+        texture = new Texture2D(width, height, TextureFormat.RGBA32, true);
         image.texture = texture;
-        
-        DrawChart(testHistory);
     }
-    
+
     public void DrawChart(List<int> history)
     {
         texture.filterMode = FilterMode.Point;
-        
+
         int size = history.Count;
         int interval = texture.width / size;
 
         int max = history.Max();
         int min = history.Min();
-        
+
         int width = (int)image.rectTransform.rect.width;
         int height = (int)image.rectTransform.rect.height;
-        
+
+        // set white pixel
         for (int x = 0; x < width; x++)
             for (int y = 0; y < height; y++)
                 texture.SetPixel(x, y, Color.white);
-        
-        for (int i = 0; i < size-1; i++)
+
+        for (int i = 0; i < size - 1; i++)
         {
             int next = i + 1;
-            
+
             int x0 = interval * i;
             int y0 = FitPriceToHeight(min, max, history[i]);
             int x1 = interval * next;
             int y1 = FitPriceToHeight(min, max, history[next]);
 
             List<(int, int)> line = InterpolateLinePixels((x0, y0), (x1, y1));
-            foreach(var pixel in line)
+            foreach (var pixel in line)
             {
                 DrawBigPixel(pixel.Item1, pixel.Item2, Color.black);
             }
         }
         // last
-        
+
         texture.Apply();
     }
-    
+
     private List<(int x, int y)> InterpolateLinePixels((int x, int y) start, (int x, int y) end)
     {
         float xPix = start.x;
@@ -97,10 +93,13 @@ public class ChartDrawer : MonoBehaviour
 
     private void DrawBigPixel(int x, int y, Color color)
     {
-        texture.SetPixel(x, y, Color.black);
-        texture.SetPixel(x+1, y, Color.black);
-        texture.SetPixel(x, y-1, Color.black);
-        texture.SetPixel(x+1, y-1, Color.black);
+        int width = (int)image.rectTransform.rect.width;
+        int height = (int)image.rectTransform.rect.height;
 
+        texture.SetPixel(x, y, Color.black);
+        texture.SetPixel(x, y - 1, Color.black);
+
+        texture.SetPixel(x + 1, y, Color.black);
+        texture.SetPixel(x + 1, y - 1, Color.black);
     }
 }
