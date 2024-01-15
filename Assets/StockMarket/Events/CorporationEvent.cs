@@ -1,0 +1,18 @@
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "New CorporationEvent", menuName = "Event/CorporationEvent")]
+class CorporationEvent : Event {
+
+    public CorporationType type;
+    public float rate;
+
+    public override void Act(Game game) {
+        foreach (Corporation i in game.Corporations)
+        {
+            if (i.Type == type) {
+                i.IncreaseParValueByRate(rate);
+            }
+        }
+
+    }
+}
