@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [Serializable]
@@ -9,6 +10,7 @@ public class Corporation
     private int parValue; // 액면가
     public float maxIncreaseRate = 0.01f; // 틱 당 최대 증가/감소률
     public float minIncreaseRate = -0.01f; // 틱 당 최소 증가/감소률
+    private List<int> priceHistory;
     
     public string Name => name;
     public CorporationType Type => type;
@@ -19,12 +21,17 @@ public class Corporation
         this.name = name;
         this.type = type;
         this.parValue = initialPrice;
+
+        priceHistory = new();
     }
 
     public void Tick()
     {
         float value = parValue * UnityEngine.Random.Range(1 + minIncreaseRate, 1 + maxIncreaseRate);
         parValue = Mathf.RoundToInt(value); // Temporary Implementation
+        
+        // add to history
+        priceHistory.Add(parValue);
     }
     
     /// <param name="rate"> 퍼센트 / 100 </param>
