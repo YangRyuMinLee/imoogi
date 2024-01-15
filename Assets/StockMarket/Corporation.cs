@@ -10,7 +10,7 @@ public class Corporation
     private int parValue; // 액면가
     public float maxIncreaseRate = 0.01f; // 틱 당 최대 증가/감소률
     public float minIncreaseRate = -0.01f; // 틱 당 최소 증가/감소률
-    private List<int> priceHistory;
+    public List<int> priceHistory;
     
     public string Name => name;
     public CorporationType Type => type;
