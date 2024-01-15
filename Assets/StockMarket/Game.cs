@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 [Serializable]
 public class Game
@@ -8,6 +9,8 @@ public class Game
     public int cash;
     public Dictionary<Corporation, int> shares;
     public IEnumerable<Corporation> Corporations => shares.Keys;
+
+    public Queue<Event> remainingEvents;
 
     public int ShareAssets
     {
@@ -26,6 +29,7 @@ public class Game
 
     public Game(){
         shares = new();
+        remainingEvents = new();
         cash = 1000000;
     }
 
@@ -36,5 +40,11 @@ public class Game
             i.Tick();
         }
         time.progress++;
+    }
+
+    public void TriggerEvent(Event e)
+    {
+        e.Act(this);
+        remainingEvents.Enqueue(e);
     }
 }

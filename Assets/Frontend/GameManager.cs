@@ -1,16 +1,42 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+
     [HideInInspector] public Game game;
-    public float interval = 1f;
+    private float Timer{
+        get => timer;
+        set {
+            timer = value;
+            statusBar.SetTimerFill(game.time, timer);
+        }
+    }
+    private float Speed{
+        get => speed;
+        set {
+            speed = value;
+            statusBar.SetSpeed(paused, speed);
+        }
+    }
+
     private float timer;
-    [SerializeField] private TextMeshProUGUI dateText;
-    [SerializeField] private TextMeshProUGUI cashText;
-    [SerializeField] private TextMeshProUGUI assetText;
+    private float speed;
+    private bool Paused{
+        get => paused;
+        set {
+            paused = value;
+            statusBar.SetSpeed(paused, speed);
+        }
+    }
+    private bool paused;
+    [SerializeField] private GameObject eventStack;
+    [SerializeField] private StatusBar statusBar;
+
+    private MenuStack menuStack;
 
     public delegate void TickEventHandler();
     public TickEventHandler onTickEvent;
@@ -41,31 +67,55 @@ public class GameManager : MonoBehaviour
     
     private void Start()
     {
-        UpdateDateText();
+        // for test
+        // ^ for test??? why are we testing? this isn't aperture
+        menuStack = GameObject.FindGameObjectWithTag("MenuStack").GetComponent<MenuStack>();
+        Speed = 1f;
+        Paused = false;
+        statusBar.SetDate(game.time);
     }
 
     private void Update()
     {
-        timer += Time.deltaTime;
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            Paused = !Paused;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Speed = 1f;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            Speed = 2f;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            Speed = 3f;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            Speed = 4f;
+        }
 
-        if(timer >= interval){
-            timer -= interval;
+        if (!paused)
+        {
+            Timer += Time.deltaTime * Speed;
+        }
+
+        if(Timer >= 1f){
+            Timer -= 1f;
             game.Tick();
             onTickEvent?.Invoke();
-            UpdateDateText();
+            statusBar.SetDate(game.time);
+            if (game.remainingEvents.TryDequeue(out Event e))
+            {
+                menuStack.Push(eventStack);
+            }
         }
-        UpdateMoneyText();
+        statusBar.SetCash(game.cash);
+        statusBar.SetAsset(game.Assets);
     }
 
 
-    private void UpdateDateText()
-    {
-        dateText.text = game.time.ToString();
-    }
-
-    private void UpdateMoneyText()
-    {
-        cashText.text = game.cash.ToString("#,##").Replace(',', ' ') + " 유동여의";
-        assetText.text = game.Assets.ToString("#,##").Replace(',', ' ') + " 총여의";
-    }
 }

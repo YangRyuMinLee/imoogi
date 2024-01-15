@@ -5,9 +5,14 @@ public class MenuStack : MonoBehaviour
 {
     public GameObject initialStack;
     public bool pausable;
+    public bool retainInitial;
     public GameObject pauseStack;
+    public GameObject background;
 
     private Stack<GameObject> menuStack;
+
+    private Stack<GameObject> _menuStack;
+
 
     public int Count => menuStack.Count;
 
@@ -55,33 +60,35 @@ public class MenuStack : MonoBehaviour
             top.SetActive(false);
         }
         menuStack.Push(menu);
-        Peek().SetActive(true);
+        UpdateGameObjects();
     }
 
     public void Pop()
     {
+        if(Count == 1 && retainInitial){
+            return;
+        }
         if(Count == 0){
             Debug.LogError("Nothing to pop in MenuStack!");
             return;
         }
         Peek().SetActive(false);
         menuStack.Pop();
+
+        UpdateGameObjects();
+    }
+
+    private void UpdateGameObjects()
+    {
+        if(background != null){
+            background.SetActive(Count != 0);
+        }
         if(Count != 0){
             Peek().SetActive(true);
         }
-        if(pausable && Count == 0){
-            Time.timeScale = 1f;
-        }
-    }
 
-    public void PopUntil(GameObject element)
-    {
-        while (Count != 0 && element != Peek())
-        {
-            Pop();
-        }
-        if(Count != 0){
-            Pop();
+        if(pausable){
+            Time.timeScale = Count == 0 ? 1f : 0f;
         }
     }
 }

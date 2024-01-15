@@ -26,6 +26,7 @@ public class MainChartManager : MonoBehaviour
     {
         gameManager = GetGameManager();
         currentCorporation = gameManager.game.Corporations.ToList()[0];
+        
         gameManager.onTickEvent += Tick;
     }
 

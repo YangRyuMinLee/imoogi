@@ -7,6 +7,7 @@ public class Event : ScriptableObject
     public Sprite headerSprite;
     public string header;
     [Multiline] public string description;
+    public string buttonText;
 
     public virtual void Act(Game game) { }
 }

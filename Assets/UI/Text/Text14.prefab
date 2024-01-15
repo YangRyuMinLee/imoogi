@@ -38,7 +38,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1851622944182768850, guid: 26bdbe3652ab0be0796fec7bbb2d8e8c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 12
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1851622944182768850, guid: 26bdbe3652ab0be0796fec7bbb2d8e8c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -110,7 +110,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8153371080960330585, guid: 26bdbe3652ab0be0796fec7bbb2d8e8c, type: 3}
       propertyPath: m_Name
-      value: Text14 Variant
+      value: Text14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

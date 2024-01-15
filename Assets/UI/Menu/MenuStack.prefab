@@ -49,3 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialStack: {fileID: 0}
+  pausable: 0
+  retainInitial: 0
+  pauseStack: {fileID: 0}
+  background: {fileID: 0}
