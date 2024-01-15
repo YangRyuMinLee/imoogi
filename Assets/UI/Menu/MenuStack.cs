@@ -3,8 +3,13 @@ using UnityEngine;
 
 public class MenuStack : MonoBehaviour
 {
-    public Stack<GameObject> menuStack;
     public GameObject initialStack;
+    public bool pausable;
+    public GameObject pauseStack;
+
+    private Stack<GameObject> menuStack;
+
+    public int Count => menuStack.Count;
 
     void Awake()
     {
@@ -13,8 +18,36 @@ public class MenuStack : MonoBehaviour
 
     void Start()
     {
-        Push(initialStack);
+        if (initialStack != null)
+        {
+            Push(initialStack);
+        }
+        if(pausable)
+        {
+            Time.timeScale = 1f;
+        }
     }
+
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            if(Count == 0)
+            {
+                if (pausable)
+                {
+                    Push(pauseStack);
+                    Time.timeScale = 0f;
+                }
+            }
+            else
+            {
+                Pop();
+            }
+        }
+    }
+
+    public GameObject Peek() => menuStack.Peek();
 
     public void Push(GameObject menu)
     {
@@ -22,21 +55,33 @@ public class MenuStack : MonoBehaviour
             top.SetActive(false);
         }
         menuStack.Push(menu);
-        menuStack.Peek().SetActive(true);
+        Peek().SetActive(true);
     }
 
     public void Pop()
     {
-        if(menuStack.Count == 0){
+        if(Count == 0){
             Debug.LogError("Nothing to pop in MenuStack!");
             return;
         }
-        menuStack.Peek().SetActive(false);
+        Peek().SetActive(false);
         menuStack.Pop();
-        if(menuStack.Count != 0){
-            menuStack.Peek().SetActive(true);
+        if(Count != 0){
+            Peek().SetActive(true);
+        }
+        if(pausable && Count == 0){
+            Time.timeScale = 1f;
         }
     }
 
-
+    public void PopUntil(GameObject element)
+    {
+        while (Count != 0 && element != Peek())
+        {
+            Pop();
+        }
+        if(Count != 0){
+            Pop();
+        }
+    }
 }

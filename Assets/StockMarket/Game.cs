@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 
 [Serializable]
-class Game
+public class Game
 {
     public int cash;
     public Dictionary<Corporation, int> shares;
