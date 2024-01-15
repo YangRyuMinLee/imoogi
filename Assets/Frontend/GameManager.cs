@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
             }
         }
         statusBar.SetCash(game.cash);
-        statusBar.SetCash(game.Assets);
+        statusBar.SetCash(game.ShareAssets);
     }
 
 
