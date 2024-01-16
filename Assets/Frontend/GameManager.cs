@@ -50,9 +50,12 @@ public class GameManager : MonoBehaviour
     }
     public List<CorporationData> testCorporations;
 
+    public EventTriggerer eventTriggerer;
+
     private void Awake()
     {
         game = new Game();
+        game.eventTriggerer = eventTriggerer;
 
         foreach (var corpData in testCorporations)
         {
@@ -104,13 +107,13 @@ public class GameManager : MonoBehaviour
         if(Timer >= 1f){
             Timer -= 1f;
             game.Tick();
-            onTickEvent?.Invoke();
             statusBar.SetDate(game.time);
             if (game.remainingEvents.TryDequeue(out Event e))
             {
                 menuStack.Push(eventDisplay.gameObject);
                 eventDisplay.SetEvent(e);
             }
+            onTickEvent?.Invoke();
         }
         statusBar.SetCash(game.cash);
         statusBar.SetAsset(game.Assets);
