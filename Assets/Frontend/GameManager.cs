@@ -98,6 +98,10 @@ public class GameManager : MonoBehaviour
         {
             Speed = 4f;
         }
+        if (Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            Speed = 100f;
+        }
 
         if (!paused)
         {
