@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96936704084c28e66806f34e9e7a72ee, type: 3}
   m_Name: Space6Event
   m_EditorClassIdentifier: 
-  headerSprite: {fileID: 0}
+  headerSprite: {fileID: 21300000, guid: ea22fa673484a449080800a6fdb759cb, type: 3}
   header: "\uC678\uACC4\uC778 \uBC1C\uACAC, \uACF5\uACA9\uD574\uC634"
   description: 
+  buttonText: "\uC090\uB9AC\uBE60\uB77C\uBF55?"
   type: 0
   rate: -0.9
