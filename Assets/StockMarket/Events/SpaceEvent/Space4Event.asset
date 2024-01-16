@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96936704084c28e66806f34e9e7a72ee, type: 3}
   m_Name: Space4Event
   m_EditorClassIdentifier: 
-  headerSprite: {fileID: 0}
+  headerSprite: {fileID: 21300000, guid: 400d30624fa364cffbe34fe7a3895ec4, type: 3}
   header: "\uB3CC\uC544\uC624\uC9C0 \uBABB\uD55C \uC774\uB4E4\uC744 \uAE30\uC5B5\uD558\uBA70"
-  description: 
+  description: "\uD654\uC131 \uAC1C\uCC99\uC744 \uC704\uD574 \uC6B0\uC8FC\uB85C \uB098\uAC04
+    \uC774\uBB34\uAE30 3\uC778\uC774 \uC6B0\uC8FC\uC5D0\uC11C \uD589\uBC29\uBD88\uBA85
+    \uB418\uC5C8\uC2B5\uB2C8\uB2E4."
+  buttonText: ...
   type: 0
   rate: -0.3

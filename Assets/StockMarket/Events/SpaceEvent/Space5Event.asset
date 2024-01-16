@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96936704084c28e66806f34e9e7a72ee, type: 3}
   m_Name: Space5Event
   m_EditorClassIdentifier: 
-  headerSprite: {fileID: 0}
+  headerSprite: {fileID: 21300000, guid: 454fc788fc63847e2bca63177851488f, type: 3}
   header: "\uC774\uBB34\uAE30, \uD55C\uACC4\uB97C \uB118\uB2E4"
-  description: 
+  description: "\uB2EC\uC5D0 \uB3C4\uCC29\uD55C\uC9C0 1\uB144 \uB9CC\uC5D0 \uB9C8\uCE68\uB0B4
+    \uD654\uC131\uC5D0\uB3C4 \uBFD4\uC744 \uB0B4\uB51B\uC5C8\uC2B5\uB2C8\uB2E4."
+  buttonText: "\uAC00\uC790!!!!"
   type: 2
   rate: 2

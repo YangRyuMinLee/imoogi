@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96936704084c28e66806f34e9e7a72ee, type: 3}
-  m_Name: SuddenEvent10
+  m_Script: {fileID: 11500000, guid: a11d898caa17acd749018c94acb222d0, type: 3}
+  m_Name: MinBirthdayEvent
   m_EditorClassIdentifier: 
   headerSprite: {fileID: 0}
-  header: "\uC774\uC81C\uC6A9 \uB124\uC774\uBB34 \uC9C0\uC6D0 \uBC1C\uD45C"
-  description: 
-  type: 5
-  rate: 0.1
+  header: "\uBBFC\uC9C0\uBA85\uC758 \uC0DD\uC77C"
+  description: "\uAC1C\uBC1C\uC790 \"\uBBFC\uC9C0\uBA85\" \uC0DD\uC77C\uC785\uB2C8\uB2E4.
+    \uAE30\uC5B5\uD558\uC138\uC694."
+  buttonText: "\uC9DD\uC9DD"
