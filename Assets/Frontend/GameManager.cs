@@ -61,10 +61,7 @@ public class GameManager : MonoBehaviour
             Corporation corporation = new(corpData.name, corpData.type, corpData.initialPrice);
             game.shares.Add(corporation, 0);
         }
-        game.TriggerEvent(testEvent);
     }
-
-    public Event testEvent;
 
     #endregion
 
