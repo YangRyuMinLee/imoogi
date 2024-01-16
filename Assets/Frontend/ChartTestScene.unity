@@ -542,7 +542,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 958816395641824318, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: orthographic size
-      value: 7.75
+      value: 7.625
       objectReference: {fileID: 0}
     - target: {fileID: 958816395641824318, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
@@ -550,7 +550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 958816395641824318, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.002006018
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 958816395641824318, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
@@ -558,7 +558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 958816395641824318, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.994985
+      value: 0.99999994
       objectReference: {fileID: 0}
     - target: {fileID: 4441884916139855896, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -657,22 +657,7 @@ MonoBehaviour:
     cash: 1000000
   eventStack: {fileID: 0}
   statusBar: {fileID: 2114512126}
-  testCorporations:
-  - name: "\uD3EC\uB808\uC2A4\uD14C\uC77C"
-    type: 5
-    initialPrice: 900
-  - name: "\uB124\uB85C\uC758 \uBAA8\uD5D8"
-    type: 5
-    initialPrice: 8000
-  - name: "\uBA54\uC774\uD50C"
-    type: 5
-    initialPrice: 200000
-  - name: "\uC2A4\uB178\uC6B0\uBCFC\uB9C1"
-    type: 5
-    initialPrice: 120000
-  - name: "\uC6E8\uD3F0\uB9AC"
-    type: 5
-    initialPrice: 30000
+  testCorporations: []
 --- !u!224 &1406673105 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6158913537729531685, guid: 68fd9a645e9929e4eb8b011ee79a868c, type: 3}
