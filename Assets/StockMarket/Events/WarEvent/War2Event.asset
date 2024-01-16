@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96936704084c28e66806f34e9e7a72ee, type: 3}
+  m_Name: War2Event
+  m_EditorClassIdentifier: 
+  headerSprite: {fileID: 0}
+  header: "\uCC9C\uC5F0\uAC00\uC2A4\uC640 \uC11D\uC720 \uAC00\uACA9 \uAE09\uB4F1,
+    \uC6B0\uC8FC \uC0B0\uC5C5 \uBD88\uC548\uD55C \uC804\uB9DD"
+  description: 
+  type: 2
+  rate: -0.3

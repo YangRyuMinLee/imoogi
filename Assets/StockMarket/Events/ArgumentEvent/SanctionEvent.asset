@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: SanctionEvent
   m_EditorClassIdentifier: 
   headerSprite: {fileID: 0}
-  header: 
-  description: 
+  header: "\uC6A9\uCC0C CEO\uC758 \uCDA9\uACA9\uC801\uC778 \uCC28\uBCC4\uBC1C\uC5B8!!"
+  description: "\uCD5C\uADFC \uC6A9\uCC0C \uAE30\uC5C5\uC758 CEO\uC758 \uCDA9\uACA9\uC801\uC778
+    \uCC28\uBCC4 \uBC1C\uC5B8\uC73C\uB85C \uD654\uC81C\uAC00 \uB418\uACE0 \uC788\uB2E4."
   type: 0
   rate: -0.5

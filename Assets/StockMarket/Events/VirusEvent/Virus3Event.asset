@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93f22a99ce2ea42418f6d70c04579835, type: 3}
+  m_Name: Virus3Event
+  m_EditorClassIdentifier: 
+  headerSprite: {fileID: 0}
+  header: "\uAE34\uAE09 \uC870\uCE58 \uBC1C\uD6A8, \uC0AC\uD68C\uC801 \uAC70\uB9AC\uB450\uAE30
+    \uC2DC\uD589 \uC2DC\uC791"
+  description: "\uC815\uBD80\uC5D0\uC11C \uB9D0\uD53C\uBC14\uC774\uB7EC\uC2A4 \uD655\uC0B0
+    \uBC29\uC9C0\uB97C \uC704\uD574 \uC0AC\uD68C\uC801 \uAC70\uB9AC\uB450\uAE30 \uBC95\uC548\uC744
+    \uD1B5\uACFC \uC2DC\uCF30\uC2B5\uB2C8\uB2E4."
+  corporationRates:
+  - type: 0
+    rate: -0.4
+  - type: 4
+    rate: -0.4
+  - type: 1
+    rate: 0.6

@@ -10,4 +10,5 @@ public class Event : ScriptableObject
     public string buttonText;
 
     public virtual void Act(Game game) { }
+    public virtual void End(Game game) { }
 }
