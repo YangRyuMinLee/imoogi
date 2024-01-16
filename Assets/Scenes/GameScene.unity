@@ -630,27 +630,27 @@ MonoBehaviour:
   eventDisplay: {fileID: 1289781415}
   statusBar: {fileID: 356297968}
   testCorporations:
-  - name: Clothing
+  - name: "\uC6A9\uCC0C"
     type: 0
-    initialPrice: 3434
-  - name: Games
+    initialPrice: 6000
+  - name: "\uB4DC\uB798\uACE4 \uC564 \uB358\uC804"
     type: 1
-    initialPrice: 12312
-  - name: Aerospace
+    initialPrice: 10000
+  - name: "\uC0BC\uC6A9\uB85C\uCF13"
     type: 2
-    initialPrice: 12312
-  - name: Foodstuffs
+    initialPrice: 200000
+  - name: "\uC6A9\uAC00\uB9AC\uD478\uB4DC"
     type: 3
-    initialPrice: 12312
-  - name: Medical
+    initialPrice: 3000
+  - name: "\uC774\uBB34\uC81C\uC57D"
     type: 4
-    initialPrice: 12312
-  - name: Information
+    initialPrice: 80000
+  - name: "\uB124\uC774\uBB34"
     type: 5
-    initialPrice: 12312
-  - name: Tech
+    initialPrice: 30000
+  - name: "\uC5EC\uC758\uD000\uD140"
     type: 6
-    initialPrice: 12312
+    initialPrice: 1200
   eventTriggerer: {fileID: 11400000, guid: be5d863519f2b38e983110bb8d5737ae, type: 2}
 --- !u!4 &981809787
 Transform:
@@ -862,11 +862,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 958816395641824318, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: orthographic size
-      value: 7.625
+      value: 6.375
       objectReference: {fileID: 0}
     - target: {fileID: 958816395641824318, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0
+      value: 0.0015278839
       objectReference: {fileID: 0}
     - target: {fileID: 958816395641824318, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
@@ -874,11 +874,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 958816395641824318, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 1
+      value: 0.9961803
       objectReference: {fileID: 0}
     - target: {fileID: 958816395641824318, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.9975551
       objectReference: {fileID: 0}
     - target: {fileID: 4441884916139855896, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_LocalPosition.x

@@ -19,23 +19,18 @@ MonoBehaviour:
     \uC0AC\uD68C\uC801 \uAC70\uB9AC\uB450\uAE30\uB97C \uC9C4\uD589\uD588\uC9C0\uB9CC
     \uD070 \uC18C\uB4DD\uC774 \uC5C6\uC5B4 \uC0AC\uD68C\uC801 \uAC70\uB9AC\uB450\uAE30\uB97C
     \uAC15\uD654\uD55C \uAC83\uC73C\uB85C \uC608\uCE21\uB429\uB2C8\uB2E4."
-  buttonText: "\uC5B8\uC81C \uB098\uAC00...."
+  buttonText: "\uB0B4 \uC0DD\uD65C\uC740 \uBC14\uC774\uB7EC\uC2A4 \uC804\uC758 \uC0DD\uD65C\uACFC
+    \uBCC0\uD558\uC9C0 \uC54A\uC558\uC5B4"
   corporationEffectApplications:
-  - type: 0
-    effect:
-      maxIncreaseRateIncrease: -0.002
-      minIncreaseRateIncrease: 0
-      duration: 90
-      timer: 0
   - type: 4
     effect:
-      maxIncreaseRateIncrease: 0.0025
-      minIncreaseRateIncrease: 0.002
-      duration: 90
+      maxIncreaseRateIncrease: 0.0015
+      minIncreaseRateIncrease: 0
+      duration: 180
       timer: 0
   - type: 1
     effect:
-      maxIncreaseRateIncrease: 0.003
-      minIncreaseRateIncrease: 0.002
-      duration: 90
+      maxIncreaseRateIncrease: 0.0015
+      minIncreaseRateIncrease: 0
+      duration: 180
       timer: 0

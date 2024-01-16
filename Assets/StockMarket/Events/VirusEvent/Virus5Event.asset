@@ -21,9 +21,9 @@ MonoBehaviour:
     \uAE30\uAC04\uB3D9\uC548 \uD070 \uD558\uB77D\uC138\uC600\uC9C0\uB9CC \uC0C8\uB85C\uC6B4
     \uC628\uB77C\uC778 \uD50C\uB7AB\uD3FC \uB7F0\uCE6D\uC73C\uB85C \uB2E4\uC2DC \uD68C\uBCF5\uD560
     \uAC83\uC73C\uB85C \uC608\uCE21\uB429\uB2C8\uB2E4."
-  buttonText: "\uBC14\uB85C \uC0AC!"
+  buttonText: "\uD328\uC158\uC744 \uB204\uAC00 \uD55C\uB2E4\uACE0"
   corporationRates:
   - type: 0
-    rate: 0.6
+    rate: 0.5
   - type: 5
     rate: 0.5

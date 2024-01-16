@@ -18,12 +18,7 @@ MonoBehaviour:
     month: 1
     day: 8
     probability: 1
-  - e: {fileID: 11400000, guid: 98e0c299be9199543bf287987a761611, type: 2}
-    year: 7997
-    month: 1
-    day: 16
-    probability: 1
-  - e: {fileID: 11400000, guid: d5c1b52abd7a7d04a93cf62a5f0e5f99, type: 2}
+  - e: {fileID: 11400000, guid: b7802beac77b545e2919cbb380f3b56d, type: 2}
     year: 7997
     month: 2
     day: 23
@@ -52,8 +47,8 @@ MonoBehaviour:
     year: 7997
     month: 12
     day: 2
-    probability: 1
-  - e: {fileID: 11400000, guid: 4695390394836a04d9c1fe35e14e0d8d, type: 2}
+    probability: 0.5
+  - e: {fileID: 11400000, guid: a7ae88ca4cdf4423da95bb2bb10cfa98, type: 2}
     year: 7997
     month: 6
     day: 15
@@ -62,7 +57,7 @@ MonoBehaviour:
     year: 7997
     month: 9
     day: 2
-    probability: 1
+    probability: 0.7
   - e: {fileID: 11400000, guid: b51d4bf733ad3f74cb40d344dcd1c43a, type: 2}
     year: 7997
     month: 12
@@ -72,7 +67,7 @@ MonoBehaviour:
     year: 7998
     month: 2
     day: 10
-    probability: 1
+    probability: 0.5
   - e: {fileID: 11400000, guid: d33084ae73bde43748f5d85155efe87f, type: 2}
     year: 7997
     month: 12
@@ -101,8 +96,13 @@ MonoBehaviour:
   - e: {fileID: 11400000, guid: a04cc4cb082fae04b9351e68c78b052d, type: 2}
     year: 7998
     month: 1
+    day: 25
+    probability: 0.7
+  - e: {fileID: 11400000, guid: 94ed56b60e4a947e8ac7267bcce1f3d1, type: 2}
+    year: 7998
+    month: 1
     day: 27
-    probability: 1
+    probability: 0.7
   - e: {fileID: 11400000, guid: a029b1a3708c6594fa3efce2b97ffbfa, type: 2}
     year: 7998
     month: 2
@@ -115,35 +115,37 @@ MonoBehaviour:
     probability: 1
   - e: {fileID: 11400000, guid: 991fd906c0c8326408fe55551ad077f0, type: 2}
     year: 7998
-    month: 9
+    month: 6
     day: 13
     probability: 1
   - e: {fileID: 11400000, guid: e377ae90b76d51a4dafa954cac48bd7b, type: 2}
-    year: 7999
-    month: 2
+    year: 7998
+    month: 9
     day: 1
     probability: 1
   - e: {fileID: 11400000, guid: 894add0b0451322419b279de745d39a0, type: 2}
-    year: 8000
-    month: 6
+    year: 7998
+    month: 12
     day: 9
     probability: 1
   - e: {fileID: 11400000, guid: eb31dc5a520aa8547a5c21cb4e0f3bd4, type: 2}
-    year: 8000
-    month: 6
+    year: 7999
+    month: 3
     day: 8
     probability: 1
   - e: {fileID: 11400000, guid: 52f1a3acb99dcde82ad56978d4442181, type: 2}
-    year: 8000
-    month: 10
+    year: 7999
+    month: 6
     day: 29
     probability: 0.01
   - e: {fileID: 11400000, guid: 1b8a40ce1d74ec0418649510ae965f65, type: 2}
-    year: 8000
+    year: 7999
     month: 12
-    day: 30
+    day: 31
     probability: 1
   randomEventTriggers:
+  - e: {fileID: 11400000, guid: 98e0c299be9199543bf287987a761611, type: 2}
+  - e: {fileID: 11400000, guid: 98e0c299be9199543bf287987a761611, type: 2}
   - e: {fileID: 11400000, guid: e2d3bd9392147784eb0eae75d98b1204, type: 2}
   - e: {fileID: 11400000, guid: 244f70432dd39fb48930775e02cd49b3, type: 2}
   - e: {fileID: 11400000, guid: 8c9e701bbf917884a8dc29a6e1ac50ed, type: 2}
@@ -153,5 +155,9 @@ MonoBehaviour:
   - e: {fileID: 11400000, guid: 186b81f4670acec42890f2f14c4db806, type: 2}
   - e: {fileID: 11400000, guid: b6e8beb2979e99b499a182a6f520737a, type: 2}
   - e: {fileID: 11400000, guid: c3ed3a7819993de46beda70a6c2c98b3, type: 2}
+  - e: {fileID: 11400000, guid: 51cf573da855e46f1b1697f91f0403fe, type: 2}
+  - e: {fileID: 11400000, guid: 2042816f9ea2c4e71be7b0a5acf01f72, type: 2}
+  - e: {fileID: 11400000, guid: 3608c096ca9b6404787327d261cd03a8, type: 2}
+  - e: {fileID: 11400000, guid: 848033e3c723240d08fd56b4407cf240, type: 2}
   repeatEventTriggers:
   - e: {fileID: 11400000, guid: c855b3b15b234caad9d27319b0fedce9, type: 2}
