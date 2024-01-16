@@ -5,18 +5,18 @@ using System.Collections.Generic;
 public class Game
 {
     public TimeProgress time;
-    public int cash;
+    public long cash;
     public Dictionary<Corporation, int> shares;
     public IEnumerable<Corporation> Corporations => shares.Keys;
 
     public Queue<Event> remainingEvents;
     public EventTriggerer eventTriggerer;
 
-    public int ShareAssets
+    public long ShareAssets
     {
         get
         {
-            int total = 0;
+            long total = 0;
             foreach (var i in shares)
             {
                 total += i.Key.ParValue * i.Value;
@@ -25,7 +25,7 @@ public class Game
         }
     }
 
-    public int Assets => ShareAssets + cash;
+    public long Assets => ShareAssets + cash;
 
     public Game(){
         shares = new();

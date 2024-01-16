@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -8,10 +7,10 @@ public class VerticalPriceIndicatorManager : MonoBehaviour
 {
     [SerializeField] private List<TextMeshProUGUI> indicators;
     
-    public void UpdateIndicator(IEnumerable<int> history)
+    public void UpdateIndicator(IEnumerable<long> history)
     {
-        int min = history.Min();
-        int max = history.Max();
+        long min = history.Min();
+        long max = history.Max();
         
         int size = indicators.Count;
         float d = 0;

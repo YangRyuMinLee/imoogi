@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
     {
         public string name;
         public CorporationType type;
-        public int initialPrice;
+        public long initialPrice;
     }
     public List<CorporationData> testCorporations;
 

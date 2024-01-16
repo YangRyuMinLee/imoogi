@@ -22,7 +22,7 @@ public class ChartDrawer : MonoBehaviour
         image.texture = texture;
     }
 
-    public void DrawChart(List<int> history, int currentPrice)
+    public void DrawChart(List<long> history, long currentPrice)
     {
         texture.filterMode = FilterMode.Point;
         
@@ -30,8 +30,8 @@ public class ChartDrawer : MonoBehaviour
 
         float interval = texture.width / (float)(size-1);
 
-        int max = history.Max();
-        int min = history.Min();
+        long max = history.Max();
+        long min = history.Min();
 
         ClearTexture();
 
@@ -67,34 +67,6 @@ public class ChartDrawer : MonoBehaviour
             }
         }
 
-        {
-            int x0 = (int)(interval * size-1);
-            int y0 = FitPriceToHeight(min, max, history[size-1]);
-            
-            int x1 = (int)(interval * size)-1;
-            int y1 = FitPriceToHeight(min, max, currentPrice);
-            
-            Color color = default;
-            if (y0 > y1)
-            {
-                color = Color.blue;
-            }
-            else if(y0 < y1)
-            {
-                color = Color.red;
-            }
-            else
-            {
-                color = Color.black;
-            }
-
-            List<(int, int)> line = InterpolateLinePixels((x0, y0), (x1, y1));
-            foreach (var pixel in line)
-            {
-                texture.SetPixel(pixel.Item1, pixel.Item2, color);
-            }
-        }
-        
         // last
         texture.Apply();
     }
@@ -136,7 +108,7 @@ public class ChartDrawer : MonoBehaviour
     }
 
 
-    private int FitPriceToHeight(int min, int max, int price)
+    private int FitPriceToHeight(long min, long max, long price)
     {
         return (int)((price - min) / (float)(max - min) * (texture.height-1));
     }

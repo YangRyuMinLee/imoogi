@@ -33,11 +33,11 @@ public class MainChartManager : MonoBehaviour
 
     public void Tick()
     {
-        List<int> priceHistory = currentCorporation.priceHistory;
+        List<long> priceHistory = currentCorporation.priceHistory;
 
         if (priceHistory.Count == 0)
         {
-            priceHistory = new List<int>();
+            priceHistory = new List<long>();
             priceHistory.Add(0);
         }
 
@@ -72,7 +72,7 @@ public class MainChartManager : MonoBehaviour
     {
         gameManager ??= GetGameManager();
 
-        int price = currentCorporation.ParValue * amount;
+        long price = currentCorporation.ParValue * amount;
 
         if (gameManager.game.cash < price) return;
         
@@ -84,7 +84,7 @@ public class MainChartManager : MonoBehaviour
     {
         gameManager ??= GetGameManager();
         
-        int price = currentCorporation.ParValue * amount;
+        long price = currentCorporation.ParValue * amount;
 
         if (gameManager.game.shares[currentCorporation] < amount)
         {
