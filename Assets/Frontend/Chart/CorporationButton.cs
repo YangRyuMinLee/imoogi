@@ -6,7 +6,7 @@ public class CorporationButton : MonoBehaviour
 {
     private Button button;
     [HideInInspector] public Corporation corporation;
-    [SerializeField] private TextMeshProUGUI name;
+    [SerializeField] new private TextMeshProUGUI name;
     [SerializeField] private TextMeshProUGUI amount;
 
     public void SetCorporation(Corporation newCorporation)
