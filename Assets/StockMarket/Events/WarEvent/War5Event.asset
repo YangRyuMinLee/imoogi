@@ -9,11 +9,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96936704084c28e66806f34e9e7a72ee, type: 3}
+  m_Script: {fileID: 11500000, guid: 93f22a99ce2ea42418f6d70c04579835, type: 3}
   m_Name: War5Event
   m_EditorClassIdentifier: 
   headerSprite: {fileID: 0}
   header: ...
   description: 
-  type: 0
-  rate: 1
+  buttonText: (tlqkf)
+  corporationRates:
+  - type: 0
+    rate: -1
+  - type: 1
+    rate: -1
+  - type: 2
+    rate: -1
+  - type: 3
+    rate: -1
+  - type: 4
+    rate: -1
+  - type: 5
+    rate: -1
+  - type: 6
+    rate: -1
