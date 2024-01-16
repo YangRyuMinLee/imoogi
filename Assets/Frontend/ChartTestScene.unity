@@ -657,7 +657,22 @@ MonoBehaviour:
     cash: 1000000
   eventStack: {fileID: 0}
   statusBar: {fileID: 2114512126}
-  testCorporations: []
+  testCorporations:
+  - name: "\uC774\uC2DC\uD615"
+    type: 0
+    initialPrice: 100000
+  - name: "\uC774\uBCD1\uD6C8"
+    type: 0
+    initialPrice: 30000
+  - name: "\uC591\uC758\uC131"
+    type: 0
+    initialPrice: 200000
+  - name: "\uBBFC\uC9C0\uBA85"
+    type: 0
+    initialPrice: 5000
+  - name: "\uC720\uBA85\uD604"
+    type: 0
+    initialPrice: 1200
 --- !u!224 &1406673105 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6158913537729531685, guid: 68fd9a645e9929e4eb8b011ee79a868c, type: 3}
