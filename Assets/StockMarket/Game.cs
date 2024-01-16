@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using UnityEngine;
 
 [Serializable]
 public class Game
@@ -11,6 +10,7 @@ public class Game
     public IEnumerable<Corporation> Corporations => shares.Keys;
 
     public Queue<Event> remainingEvents;
+    public EventTriggerer eventTriggerer;
 
     public int ShareAssets
     {
@@ -35,11 +35,12 @@ public class Game
 
     public void Tick()
     {
+        time.progress++;
+        eventTriggerer.TriggerEvents(this);
         foreach (Corporation i in Corporations)
         {
             i.Tick();
         }
-        time.progress++;
     }
 
     public void TriggerEvent(Event e)
