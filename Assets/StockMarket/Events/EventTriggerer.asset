@@ -47,7 +47,7 @@ MonoBehaviour:
     year: 7997
     month: 7
     day: 29
-    probability: 1
+    probability: 0.5
   - e: {fileID: 11400000, guid: 7bbd13fc8ea7e6f41a8ecd361cdbac3c, type: 2}
     year: 7997
     month: 12
@@ -143,5 +143,14 @@ MonoBehaviour:
     month: 12
     day: 30
     probability: 1
-  randomEventTriggers: []
+  randomEventTriggers:
+  - e: {fileID: 11400000, guid: e2d3bd9392147784eb0eae75d98b1204, type: 2}
+  - e: {fileID: 11400000, guid: 244f70432dd39fb48930775e02cd49b3, type: 2}
+  - e: {fileID: 11400000, guid: 8c9e701bbf917884a8dc29a6e1ac50ed, type: 2}
+  - e: {fileID: 11400000, guid: 605064174fc333742adfb957e1d941c4, type: 2}
+  - e: {fileID: 11400000, guid: f019abced8f4d4c4297aa324d689d96e, type: 2}
+  - e: {fileID: 11400000, guid: b6760b2162b6f004f9456b16550e6847, type: 2}
+  - e: {fileID: 11400000, guid: 186b81f4670acec42890f2f14c4db806, type: 2}
+  - e: {fileID: 11400000, guid: b6e8beb2979e99b499a182a6f520737a, type: 2}
+  - e: {fileID: 11400000, guid: c3ed3a7819993de46beda70a6c2c98b3, type: 2}
   repeatEventTriggers: []

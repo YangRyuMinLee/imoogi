@@ -16,7 +16,6 @@ public class EventTriggerer : ScriptableObject{
     [Serializable]
     public struct RandomEventTrigger {
         public Event e;
-        public float probability;
     }
 
     [Serializable]
@@ -37,7 +36,9 @@ public class EventTriggerer : ScriptableObject{
     private void TriggerTimeEvents(Game game) {
         foreach (var i in timeEventTriggers) {
             if (game.time.progress % 6 == 0 && CompareDateTime(game.time.dateTime, i.year, i.month, i.day)) {
-                game.TriggerEvent(i.e);
+                if (UnityEngine.Random.Range(0f, 1f) <= i.probability) {
+                    game.TriggerEvent(i.e);
+                }
             }
         }
     }
@@ -49,5 +50,8 @@ public class EventTriggerer : ScriptableObject{
 
 
     private void TriggerRandomEvents(Game game) {
+        if (game.time.progress % 6 == 0 & game.time.dateTime.Day == 15) {
+            game.TriggerEvent(randomEventTriggers[UnityEngine.Random.Range(0, randomEventTriggers.Length)].e);
+        }
     }
 }
