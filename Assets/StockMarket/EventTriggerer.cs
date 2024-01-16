@@ -31,6 +31,7 @@ public class EventTriggerer : ScriptableObject{
     public void TriggerEvents(Game game){
         TriggerTimeEvents(game);
         TriggerRandomEvents(game);
+        TriggerRepeatEvents(game);
     }
 
     private void TriggerTimeEvents(Game game) {
@@ -50,8 +51,16 @@ public class EventTriggerer : ScriptableObject{
 
 
     private void TriggerRandomEvents(Game game) {
-        if (game.time.progress % 6 == 0 & game.time.dateTime.Day == 15) {
+        if (game.time.progress % 6 == 0 && game.time.dateTime.Day == 15) {
             game.TriggerEvent(randomEventTriggers[UnityEngine.Random.Range(0, randomEventTriggers.Length)].e);
+        }
+    }
+
+    private void TriggerRepeatEvents(Game game){
+        if(game.time.progress % 6 == 0 && game.time.dateTime.Day == 1){
+            foreach(var i in repeatEventTriggers){
+                game.TriggerEvent(i.e);
+            }
         }
     }
 }
