@@ -21,7 +21,7 @@ public class VerticalPriceIndicatorManager : MonoBehaviour
         for (int i = 1; i < size; i++)
         {
             d += interval;
-            indicators[i].text = ((max - min) * d + min).ToString();
+            indicators[i].text = Mathf.Round(((max - min) * d + min)).ToString();
         }
     }
 }

@@ -17,6 +17,8 @@ public class ChartDrawer : MonoBehaviour
         int height = (int)image.rectTransform.rect.height;
 
         texture = new Texture2D(width, height, TextureFormat.RGBA32, false);
+        ClearTexture();
+
         image.texture = texture;
     }
 
@@ -25,20 +27,16 @@ public class ChartDrawer : MonoBehaviour
         texture.filterMode = FilterMode.Point;
         
         int size = history.Count;
-        int width = texture.width;
-        int height = texture.height;
-        
-        float interval = width / (float)(size-1);
+
+        float interval = texture.width / (float)(size-1);
 
         int max = history.Max();
         int min = history.Min();
 
-        // set white pixel
-        for (int x = 0; x < width; x++)
-            for (int y = 0; y < height; y++)
-                texture.SetPixel(x, y, Color.white);
+        ClearTexture();
 
-        for (int i = 0; i < size - 2; i++)
+
+        for (int i = 0; i < size - 1; i++)
         {
             int next = i + 1;
 
@@ -129,6 +127,14 @@ public class ChartDrawer : MonoBehaviour
 
         return pixels;
     }
+
+    private void ClearTexture() {
+        // set white pixel
+        for (int x = 0; x < texture.width; x++)
+            for (int y = 0; y < texture.height; y++)
+                texture.SetPixel(x, y, Color.white);
+    }
+
 
     private int FitPriceToHeight(int min, int max, int price)
     {
