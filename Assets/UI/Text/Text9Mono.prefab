@@ -102,7 +102,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5470272177601592644, guid: 5489f9c87a7f1a9868ff1e6ecd4da369, type: 3}
       propertyPath: m_Name
-      value: Text9Mono Variant
+      value: Text9Mono
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
