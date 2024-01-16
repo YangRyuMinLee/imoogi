@@ -15,5 +15,6 @@ public class EventDisplay : MonoBehaviour
         headerImage.sprite = e.headerSprite;
         descriptionText.text = e.description;
         buttonText.text = e.buttonText;
+        headerImage.gameObject.SetActive(e.header != "");
     }
 }
