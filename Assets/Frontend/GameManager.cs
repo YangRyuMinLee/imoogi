@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
         }
     }
     private bool paused;
-    [SerializeField] private GameObject eventStack;
+    [SerializeField] private EventDisplay eventDisplay;
     [SerializeField] private StatusBar statusBar;
 
     private MenuStack menuStack;
@@ -79,7 +79,8 @@ public class GameManager : MonoBehaviour
             statusBar.SetDate(game.time);
             if (game.remainingEvents.TryDequeue(out Event e))
             {
-                menuStack.Push(eventStack);
+                menuStack.Push(eventDisplay.gameObject);
+                eventDisplay.SetEvent(e);
             }
         }
         statusBar.SetCash(game.cash);

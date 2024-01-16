@@ -287,8 +287,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   game:
     cash: 1000000
-  eventStack: {fileID: 1289781413}
+  eventDisplay: {fileID: 1289781415}
   statusBar: {fileID: 356297968}
+  testEvent: {fileID: 11400000, guid: 7be16755ab22bb35db2b14b180dfb63d, type: 2}
 --- !u!4 &981809787
 Transform:
   m_ObjectHideFlags: 0
@@ -491,16 +492,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b77b5e2535743b4ba61eaad52d8beb6, type: 3}
---- !u!1 &1289781413 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 244669662923870934, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
-  m_PrefabInstance: {fileID: 4856767212066770920}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1289781414 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8022110720280919935, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
   m_PrefabInstance: {fileID: 4856767212066770920}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1289781415 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6706950010503320809, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
+  m_PrefabInstance: {fileID: 4856767212066770920}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dc07afc43a475ef2b00a55811faee10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1573752539
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -804,6 +811,10 @@ PrefabInstance:
     - target: {fileID: 244669662923870934, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
       propertyPath: m_Name
       value: EventStack
+      objectReference: {fileID: 0}
+    - target: {fileID: 4670555339210901900, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
+      propertyPath: m_enableWordWrapping
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8022110720280919935, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
       propertyPath: m_Pivot.x
