@@ -72,8 +72,10 @@ public class MainChartManager : MonoBehaviour
     {
         gameManager ??= GetGameManager();
 
-        long price = currentCorporation.ParValue * amount;
+        if (gameManager.game.cash <= 0) return;
 
+        long price = currentCorporation.ParValue * amount;
+        
         if (gameManager.game.cash < price)
         {
             amount = (int)(gameManager.game.cash / currentCorporation.ParValue);
