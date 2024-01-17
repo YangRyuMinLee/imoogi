@@ -20,8 +20,8 @@ public class Horsemove : MonoBehaviour
     {
         foreach (var h in hObjects)
         {
-            minSpeed = h.Speed / UnityEngine.Random.Range(8f, 20f) - UnityEngine.Random.Range(0.1f, 5f);
-            maxSpeed = h.Speed * UnityEngine.Random.Range(16f, 20f) + UnityEngine.Random.Range(0.1f, 5f);
+            minSpeed = h.Speed / UnityEngine.Random.Range(10f, 50f) - UnityEngine.Random.Range(1f, 7f);
+            maxSpeed = h.Speed * UnityEngine.Random.Range(20f, 50f) + UnityEngine.Random.Range(1f, 7f);
         }
     }
 
