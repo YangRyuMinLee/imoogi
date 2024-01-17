@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   headerSprite: {fileID: 21300000, guid: 3bfafeca108e64d1b843d3146986c62d, type: 3}
   header: "\uB4DC\uB798\uACE4 \uC564 \uB358\uC804, \uC9C1\uC6D0 \uACFC\uB85C\uC0AC"
-  description: 
+  description: "\uB4DC\uB798\uACE4 \uC564 \uB358\uC804 \uC0AC\uC758 \uD504\uB85C\uADF8\uB798\uBA38
+    A\uC528\uAC00 \uACFC\uB3C4\uD55C \uB178\uB3D9\uC73C\uB85C \uC0AC\uB9DD\uD55C
+    \uAC83\uC73C\uB85C \uBC1D\uD600\uC84C\uC2B5\uB2C8\uB2E4.\n"
   buttonText: "\uB54C\uB824\uCE58\uAE38 \uC798\uD588\uB2E4"
   type: 1
   rate: -0.3

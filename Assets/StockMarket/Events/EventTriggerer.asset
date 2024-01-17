@@ -38,10 +38,15 @@ MonoBehaviour:
     month: 7
     day: 20
     probability: 1
+  - e: {fileID: 11400000, guid: 0229d99d2585340c7bff091a1e1c47ce, type: 2}
+    year: 7997
+    month: 4
+    day: 12
+    probability: 0.5
   - e: {fileID: 11400000, guid: 68840fad567244c7d8d50b5294e72cd4, type: 2}
     year: 7997
-    month: 7
-    day: 29
+    month: 5
+    day: 27
     probability: 0.5
   - e: {fileID: 11400000, guid: 7bbd13fc8ea7e6f41a8ecd361cdbac3c, type: 2}
     year: 7997

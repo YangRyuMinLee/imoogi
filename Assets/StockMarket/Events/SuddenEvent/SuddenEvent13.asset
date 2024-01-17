@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96936704084c28e66806f34e9e7a72ee, type: 3}
   m_Name: SuddenEvent13
   m_EditorClassIdentifier: 
-  headerSprite: {fileID: 21300000, guid: 71b9c609511ff46c2b0566b55c36888f, type: 3}
+  headerSprite: {fileID: 21300000, guid: 75aac7eea48fa49008809f5d1445c922, type: 3}
   header: "\uC5EC\uC758\uD000\uD140 \uBE44\uC790\uAE08 \uD6A1\uB839"
-  description: 
+  description: "\uC5EC\uC758\uD000\uD140\uC758 \uC774\uB300\uD45C\uAC00 10\uC5B5\uC744
+    \uD6A1\uB839\uD55C \uAC83\uC73C\uB85C \uBC1D\uD600\uC838 \uD654\uC81C\uC785\uB2C8\uB2E4."
   buttonText: "\uB098 1\uC5B5\uB9CC"
   type: 1
   rate: -0.25
