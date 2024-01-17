@@ -12,7 +12,7 @@ public class MainChartManager : MonoBehaviour
     [SerializeField] private VerticalPriceIndicatorManager verticalPriceIndicator;
     [SerializeField] private TextMeshProUGUI currentPriceText;
     [SerializeField] private TextMeshProUGUI chartNameText;
-    private GameManager gameManager;
+    private Game game;
     
     public enum FilterMode
     {
@@ -20,15 +20,14 @@ public class MainChartManager : MonoBehaviour
         R20,
     }
     private FilterMode filterMode;
-
-    private GameManager GetGameManager() => GameObject.FindObjectOfType<GameManager>();
-
+    
     private void Start()
     {
-        gameManager = GetGameManager();
-        currentCorporation = gameManager.game.Corporations.ToList()[0];
-        
+        GameManagerBase gameManager = GameObject.FindObjectOfType<GameManagerBase>();
         gameManager.onTickEvent += Tick;
+        
+        game = gameManager.GetGame();
+        currentCorporation = game.Corporations.First();
     }
 
     public void Tick()
@@ -70,35 +69,31 @@ public class MainChartManager : MonoBehaviour
 
     public void Buy(int amount)
     {
-        gameManager ??= GetGameManager();
-
-        if (gameManager.game.cash <= 0) return;
+        if (game.cash <= 0) return;
 
         long price = currentCorporation.ParValue * amount;
         
-        if (gameManager.game.cash < price)
+        if (game.cash < price)
         {
-            amount = (int)(gameManager.game.cash / currentCorporation.ParValue);
+            amount = (int)(game.cash / currentCorporation.ParValue);
             price = currentCorporation.ParValue * amount;
         }
         
-        gameManager.game.cash -= price;
-        gameManager.game.shares[currentCorporation] += amount;
+        game.cash -= price;
+        game.shares[currentCorporation] += amount;
     }
 
     public void Sell(int amount)
     {
-        gameManager ??= GetGameManager();
-        
         long price = currentCorporation.ParValue * amount;
 
-        if (gameManager.game.shares[currentCorporation] < amount)
+        if (game.shares[currentCorporation] < amount)
         {
-            amount = gameManager.game.shares[currentCorporation];
+            amount = game.shares[currentCorporation];
             price = currentCorporation.ParValue * amount;
         }
         
-        gameManager.game.cash += price;
-        gameManager.game.shares[currentCorporation] -= amount;
+        game.cash += price;
+        game.shares[currentCorporation] -= amount;
     }
 }
