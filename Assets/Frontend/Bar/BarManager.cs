@@ -1,11 +1,7 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using UnityEditor.VersionControl;
 using UnityEngine;
 using Random = System.Random;
-using Task = System.Threading.Tasks.Task;
 
 public class BarManager : MonoBehaviour
 {
@@ -19,14 +15,18 @@ public class BarManager : MonoBehaviour
         gameManager = GameObject.FindObjectOfType<GameManager>();
     }
 
-    public async void Show(float duration = 1f)
+    public void Show(float duration = 1f)
     {
+        if (gameManager.game.cash >= 50000){
+            gameManager.game.cash -= 50000;
+        }
+        else {
+            return;
+        }
         //random get
         int randomNumber = new Random().Next(0, listenList.Count);
         listenText.text = listenList[randomNumber];
-        
-        if(gameManager.game.cash >= 50000)
-            gameManager.game.cash -= 50000;
+
 
         time = duration;
     }

@@ -50,13 +50,19 @@ public class GameManager : GameManagerBase
     private void Start()
     {
         path = Application.persistentDataPath + "/imoogi.json";
-        if(SceneTransitionDataStorage.data.newGame)
-        {
-            LoadNew();
+        if (SceneTransitionDataStorage.data.loadFile) {
+            if(SceneTransitionDataStorage.data.newGame)
+            {
+                LoadNew();
+            }
+            else
+            {
+                LoadFile();
+            }
         }
-        else
-        {
-            LoadFile();
+        else {
+            LoadStatic();
+            game.cash += SceneTransitionDataStorage.data.moneyIncrease;
         }
         menuStack = GameObject.FindGameObjectWithTag("MenuStack").GetComponent<MenuStack>();
         Speed = 1f;
@@ -124,6 +130,14 @@ public class GameManager : GameManagerBase
         byte[] data = new UTF8Encoding(true).GetBytes(json);
         stream.Write(data, 0, data.Length);
         Debug.Log("Successfully saved to " + path);
+    }
+
+    public void SaveStatic() {
+        SceneTransitionDataStorage.data.game = game;
+    }
+
+    public void LoadStatic(){
+        game = SceneTransitionDataStorage.data.game;
     }
 
     public void LoadFile()
