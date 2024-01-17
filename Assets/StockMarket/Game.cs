@@ -10,7 +10,7 @@ public class Game
     public IEnumerable<Corporation> Corporations => shares.Keys;
 
     public List<Event> remainingEvents;
-    public EventTriggerer eventTriggerer;
+    [NonSerialized] public EventTriggerer eventTriggerer;
 
     public long ShareAssets
     {

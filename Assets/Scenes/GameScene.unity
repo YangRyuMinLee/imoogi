@@ -631,10 +631,10 @@ MonoBehaviour:
     shares:
       list: []
     remainingEvents: []
-    eventTriggerer: {fileID: 0}
   eventDisplay: {fileID: 1289781415}
   statusBar: {fileID: 356297968}
   newGameJson: {fileID: 4900000, guid: e8f4c8aee213f2a988d86e30018fd64b, type: 3}
+  eventTriggerer: {fileID: 11400000, guid: be5d863519f2b38e983110bb8d5737ae, type: 2}
 --- !u!4 &981809787
 Transform:
   m_ObjectHideFlags: 0
@@ -849,19 +849,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 958816395641824318, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_NormalizedViewPortRect.x
-      value: 0.0020283975
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 958816395641824318, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_NormalizedViewPortRect.y
-      value: 0.0019900498
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 958816395641824318, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_NormalizedViewPortRect.width
-      value: 0.99526703
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 958816395641824318, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_NormalizedViewPortRect.height
-      value: 0.9950249
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4441884916139855896, guid: 1c87b0e77681efa5fa0f73160fb0cae8, type: 3}
       propertyPath: m_LocalPosition.x

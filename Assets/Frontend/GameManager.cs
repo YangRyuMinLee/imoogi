@@ -48,6 +48,7 @@ public class GameManager : MonoBehaviour
     private string path;
 
     public TextAsset newGameJson;
+    public EventTriggerer eventTriggerer;
 
     private void Start()
     {
@@ -143,5 +144,6 @@ public class GameManager : MonoBehaviour
 
     public void LoadJson(string json){
         game = JsonUtility.FromJson<Game>(json);
+        game.eventTriggerer = eventTriggerer;
     }
 }

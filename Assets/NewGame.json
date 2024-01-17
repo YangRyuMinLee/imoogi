@@ -105,8 +105,5 @@
 			}
 		]
 	},
-	"remainingEvents": [],
-	"eventTriggerer": {
-		"instanceID": 28314
-	}
+	"remainingEvents": []
 }
