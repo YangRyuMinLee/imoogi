@@ -1,6 +1,7 @@
-using System;
+ï»¿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -32,25 +33,25 @@ public class CrashScripts : MonoBehaviour
     void HorseCon_1(Collider2D o)
     {
         rankText.gameObject.SetActive(true);
-        rankText.text = "1¹ø ¸» ½Â¸®!";
+        rankText.text = "1ë²ˆ ë§ ìŠ¹ë¦¬!";
         gameObject.GetComponent<CrashScripts>().enabled = false;
     }
     void HorseCon_2(Collider2D o)
     {
         rankText.gameObject.SetActive(true);
-        rankText.text = "2¹ø ¸» ½Â¸®!";
+        rankText.text = "2ë²ˆ ë§ ìŠ¹ë¦¬!";
         gameObject.GetComponent<CrashScripts>().enabled = false;
     }
     void HorseCon_3(Collider2D o)
     {
         rankText.gameObject.SetActive(true);
-        rankText.text = "3¹ø ¸» ½Â¸®!";
+        rankText.text = "3ë²ˆ ë§ ìŠ¹ë¦¬!";
         gameObject.GetComponent<CrashScripts>().enabled = false;
     }
     void HorseCon_4(Collider2D o)
     {
         rankText.gameObject.SetActive(true);
-        rankText.text = "4¹ø ¸» ½Â¸®!";
+        rankText.text = "4ë²ˆ ë§ ìŠ¹ë¦¬!";
         gameObject.GetComponent<CrashScripts>().enabled = false;
     }
 }
