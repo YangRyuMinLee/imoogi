@@ -1,21 +1,25 @@
-using System;
-using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
+using System.Text;
 
 public class GameManager : MonoBehaviour
 {
 
     [HideInInspector] public Game game;
-    private float Timer{
+    private float Timer
+    {
         get => timer;
-        set {
+        set
+        {
             timer = value;
             statusBar.SetTimerFill(game.time, timer);
         }
     }
-    private float Speed{
+    private float Speed
+    {
         get => speed;
-        set {
+        set
+        {
             speed = value;
             statusBar.SetSpeed(paused, speed);
         }
@@ -23,9 +27,11 @@ public class GameManager : MonoBehaviour
 
     private float timer;
     private float speed;
-    private bool Paused{
+    private bool Paused
+    {
         get => paused;
-        set {
+        set
+        {
             paused = value;
             statusBar.SetSpeed(paused, speed);
         }
@@ -39,37 +45,21 @@ public class GameManager : MonoBehaviour
     public delegate void TickEventHandler();
     public TickEventHandler onTickEvent;
 
-    #region TEST (REMOVE LATER)
+    private string path;
 
-    [Serializable]
-    public struct CorporationData
-    {
-        public string name;
-        public CorporationType type;
-        public long initialPrice;
-    }
-    public List<CorporationData> testCorporations;
-
-    public EventTriggerer eventTriggerer;
-
-    private void Awake()
-    {
-        game = new Game();
-        game.eventTriggerer = eventTriggerer;
-
-        foreach (var corpData in testCorporations)
-        {
-            Corporation corporation = new(corpData.name, corpData.type, corpData.initialPrice);
-            game.shares.Add(corporation, 0);
-        }
-    }
-
-    #endregion
+    public TextAsset newGameJson;
 
     private void Start()
     {
-        // for test
-        // ^ for test??? why are we testing? this isn't aperture
+        path = Application.persistentDataPath + "/imoogi.json";
+        if(SceneTransitionDataStorage.data.newGame)
+        {
+            LoadNew();
+        }
+        else
+        {
+            LoadFile();
+        }
         menuStack = GameObject.FindGameObjectWithTag("MenuStack").GetComponent<MenuStack>();
         Speed = 1f;
         Paused = false;
@@ -108,12 +98,15 @@ public class GameManager : MonoBehaviour
             Timer += Time.deltaTime * Speed;
         }
 
-        if(Timer >= 1f){
+        if (Timer >= 1f)
+        {
             Timer -= 1f;
             game.Tick();
             statusBar.SetDate(game.time);
-            if (game.remainingEvents.TryDequeue(out Event e))
+            if (game.remainingEvents.Count != 0)
             {
+                Event e = game.remainingEvents[0];
+                game.remainingEvents.RemoveAt(0);
                 menuStack.Push(eventDisplay.gameObject);
                 eventDisplay.SetEvent(e);
             }
@@ -123,5 +116,32 @@ public class GameManager : MonoBehaviour
         statusBar.SetAsset(game.Assets);
     }
 
+    public void SaveFile()
+    {
+        string json = JsonUtility.ToJson(game);
+        Debug.Log(Application.persistentDataPath);
+        if(File.Exists(path)){
+            File.Delete(path);
+        }
+        FileStream stream = File.Create(path);
+        byte[] data = new UTF8Encoding(true).GetBytes(json);
+        stream.Write(data, 0, data.Length);
+        Debug.Log("Successfully saved to " + path);
+    }
 
+    public void LoadFile()
+    {
+        string json = File.ReadAllText(path);
+        LoadJson(json);
+        Debug.Log("Successfully loaded from " + path);
+    }
+
+    public void LoadNew(){
+        LoadJson(newGameJson.text);
+        Debug.Log("Successfully loaded new game");
+    }
+
+    public void LoadJson(string json){
+        game = JsonUtility.FromJson<Game>(json);
+    }
 }

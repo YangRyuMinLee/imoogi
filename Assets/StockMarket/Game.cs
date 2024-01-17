@@ -6,10 +6,10 @@ public class Game
 {
     public TimeProgress time;
     public long cash;
-    public Dictionary<Corporation, int> shares;
+    public SerializableDictionary<Corporation, int> shares;
     public IEnumerable<Corporation> Corporations => shares.Keys;
 
-    public Queue<Event> remainingEvents;
+    public List<Event> remainingEvents;
     public EventTriggerer eventTriggerer;
 
     public long ShareAssets
@@ -46,6 +46,6 @@ public class Game
     public void TriggerEvent(Event e)
     {
         e.Act(this);
-        remainingEvents.Enqueue(e);
+        remainingEvents.Add(e);
     }
 }
