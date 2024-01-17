@@ -5,9 +5,9 @@ using UnityEngine;
 [Serializable]
 public class Corporation
 {
-    private string name; // 회사 이름
-    private CorporationType type; // 회사 종류
-    private long parValue; // 액면가
+    [SerializeField] [HideInInspector] private string name; // 회사 이름
+    [SerializeField] [HideInInspector] private CorporationType type; // 회사 종류
+    [SerializeField] [HideInInspector] private long parValue; // 액면가
     public float maxIncreaseRate = 0.02f; // 틱 당 최대 증가/감소률
     public float minIncreaseRate = -0.02f; // 틱 당 최소 증가/감소률
     public float EffectedMaxIncreaseRate{
@@ -30,7 +30,7 @@ public class Corporation
     public CorporationType Type => type;
     public long ParValue => parValue;
 
-    private List<CorporationEffect> effects;
+    [SerializeField] [HideInInspector] private List<CorporationEffect> effects;
 
     public Corporation(string name, CorporationType type, long initialPrice)
     {
