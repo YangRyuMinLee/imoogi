@@ -7,6 +7,10 @@ TagManager:
   - MenuStack
   - Hoarse
   - Horse
+  - Horse1
+  - Horse2
+  - Horse3
+  - Horse4
   layers:
   - Default
   - TransparentFX

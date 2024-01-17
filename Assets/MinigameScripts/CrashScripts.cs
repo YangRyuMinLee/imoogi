@@ -8,22 +8,36 @@ using UnityEngine.UI;
 public class CrashScripts : MonoBehaviour
 {
     public TextMeshProUGUI rankText;
-    int count = 0;
-
+    int count = 1;
     void OnTriggerEnter2D(Collider2D o)
     {
-        count++;
-        
-        if (count == 1)
+        count--;
+        if(count == 0)
         {
-            TrigerOn(o);
-            gameObject.GetComponent<CrashScripts>().enabled = false;
+            if (o.tag == "Horse1")
+            {
+                rankText.gameObject.SetActive(true);
+                rankText.text = "1锅 富 铰府!";
+                gameObject.GetComponent<CrashScripts>().enabled = false;
+            }
+            else if (o.tag == "Horse2")
+            {
+                rankText.gameObject.SetActive(true);
+                rankText.text = "2锅 富 铰府!";
+                gameObject.GetComponent<CrashScripts>().enabled = false;
+            }
+            else if (o.tag == "Horse3")
+            {
+                rankText.gameObject.SetActive(true);
+                rankText.text = "3锅 富 铰府!";
+                gameObject.GetComponent<CrashScripts>().enabled = false;
+            }
+            else if (o.tag == "Horse4")
+            {
+                rankText.gameObject.SetActive(true);
+                rankText.text = "4锅 富 铰府!";
+                gameObject.GetComponent<CrashScripts>().enabled = false;
+            }
         }
-    }
-    void TrigerOn(Collider2D o)
-    {
-        rankText.gameObject.SetActive(true);
-        rankText.text = o.gameObject.name;
-        Debug.Log(o.gameObject.name);
     }
 }
