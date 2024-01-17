@@ -32,13 +32,13 @@ public class Horsemove : MonoBehaviour
             if(h.target != null)
             {
                 Vector2 targetPosition = new Vector2(h.target.transform.position.x + 0.1f, h.target.transform.position.y);
-                h.target.transform.position = Vector2.MoveTowards(h.target.transform.position, targetPosition, h.Speed * Time.deltaTime);
+                h.target.transform.position = Vector2.Lerp(h.target.transform.position, targetPosition, h.Speed * Time.deltaTime);
 
                 float positionThreshold = 0.01f;
 
                 if (Mathf.Abs(h.target.transform.position.x - transform.position.x) < positionThreshold)
                 {
-                    gameObject.GetComponent<Horsemove>().enabled = false;
+                    enabled = false;
                 }
 
 

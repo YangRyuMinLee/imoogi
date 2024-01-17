@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
-using Unity.VisualScripting;
 
 public class ButtonClickManager : MonoBehaviour
 {
@@ -12,33 +8,18 @@ public class ButtonClickManager : MonoBehaviour
     public GameObject btnoff;
     public GameObject horsemove;
     private GameObject Score;
+    public int selectedHorse;
+    public GameObject betting;
+    public GameObject backButton;
 
-    public void HorseOnClick_1()
+    public void HorseOnClick(int horse)
     {
+        selectedHorse = horse;
         horsemove.GetComponent<Horsemove>().enabled = true;
         titletext.gameObject.SetActive(false);
         selectxt.gameObject.SetActive(false);
-        btnoff.gameObject.SetActive(false);
-    }
-    public void HorseOnClick_2()
-    {
-        horsemove.GetComponent<Horsemove>().enabled = true;
-        titletext.gameObject.SetActive(false);
-        selectxt.gameObject.SetActive(false);
-        btnoff.gameObject.SetActive(false);
-    }
-    public void HorseOnClick_3()
-    {
-        horsemove.GetComponent<Horsemove>().enabled = true;
-        titletext.gameObject.SetActive(false);
-        selectxt.gameObject.SetActive(false);
-        btnoff.gameObject.SetActive(false);
-    }
-    public void HorseOnClick_4()
-    {
-        horsemove.GetComponent<Horsemove>().enabled = true;
-        titletext.gameObject.SetActive(false);
-        selectxt.gameObject.SetActive(false);
-        btnoff.gameObject.SetActive(false);
+        btnoff.SetActive(false);
+        betting.SetActive(false);
+        backButton.SetActive(false);
     }
 }

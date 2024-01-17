@@ -18,7 +18,7 @@ public class Cameramove : MonoBehaviour
         cameraHalfHeight = Camera.main.orthographicSize;
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if (target != null)
         {
