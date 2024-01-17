@@ -2,7 +2,7 @@ using UnityEngine;
 using System.IO;
 using System.Text;
 
-public class GameManager : MonoBehaviour
+public class GameManager : GameManagerBase
 {
 
     [HideInInspector] public Game game;
@@ -41,9 +41,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private StatusBar statusBar;
 
     private MenuStack menuStack;
-
-    public delegate void TickEventHandler();
-    public TickEventHandler onTickEvent;
 
     private string path;
 
@@ -145,4 +142,7 @@ public class GameManager : MonoBehaviour
         game = JsonUtility.FromJson<Game>(json);
         game.eventTriggerer = eventTriggerer;
     }
+
+    public override Game GetGame() => game;
+    public override event TickEventHandler onTickEvent;
 }
