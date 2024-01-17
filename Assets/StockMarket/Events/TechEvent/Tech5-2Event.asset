@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96936704084c28e66806f34e9e7a72ee, type: 3}
+  m_Name: Tech5-2Event
+  m_EditorClassIdentifier: 
+  headerSprite: {fileID: 21300000, guid: 0eae01cf2bade47fa905e59500512f82, type: 3}
+  header: "\uAD6D\uB9BD\uC5F0\uAD6C\uC18C \"\uC544\uB2C8\uB2E4\" \uBC1C\uD45C"
+  description: "\uAD6D\uB9BD\uC5F0\uAD6C\uC18C\uB294 \uC2DC\uBBAC\uB808\uC774\uC158
+    \uACFC\uC815 \uC18D\uC5D0 \uC624\uB958\uAC00 \uC874\uC7AC\uD588\uB2E4\uACE0 \uBC1D\uD614\uACE0
+    \uBB34\uD55C \uC5D0\uB108\uC9C0\uC778\uC9C0 \uBAA8\uB974\uACA0\uB2E4\uACE0 \uBC1C\uD45C\uD588\uC2B5\uB2C8\uB2E4."
+  buttonText: "\uC5B4\uB77C\uB77C?"
+  type: 6
+  rate: -0.5

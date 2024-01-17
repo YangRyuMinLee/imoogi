@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96936704084c28e66806f34e9e7a72ee, type: 3}
+  m_Name: SuddenEvent7
+  m_EditorClassIdentifier: 
+  headerSprite: {fileID: 21300000, guid: 71b9c609511ff46c2b0566b55c36888f, type: 3}
+  header: "\uC6A9\uCC0C \uC9C1\uC6D0 \uAC11\uC9C8"
+  description: "\uB9E4\uC7A5\uC5D0 \uC1FC\uD551\uD558\uB7EC \uC628 \uC18C\uBE44\uC790\uB97C
+    \uBB34\uC2DC\uD558\uACE0 \uBE44\uB09C\uD55C \uC6A9\uCC0C \uC9C1\uC6D0\uC774 \uB17C\uB780\uC774
+    \uB418\uACE0 \uC788\uC2B5\uB2C8\uB2E4.\n\uD574\uB2F9 \uC9C1\uC6D0\uC740 \uC18C\uBE44\uC790\uB97C
+    \uD5A5\uD574 \"\uB3C8 \uC5C6\uC73C\uBA74 \uAEBC\uC838\uB77C\" \uB4F1 \uB9E4\uC6B0
+    \uBD80\uC815\uC801\uC778 \uBC1C\uC5B8\uC744 \uAC70\uB9AC\uB08C\uC5C6\uC774 \uD55C
+    \uAC83\uC73C\uB85C \uC804\uD574\uC9D1\uB2C8\uB2E4."
+  buttonText: ...
+  type: 0
+  rate: -0.1

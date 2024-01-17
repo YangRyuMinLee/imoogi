@@ -21,7 +21,7 @@ public class MainChartManager : MonoBehaviour
     }
     private FilterMode filterMode;
 
-    private GameManager GetGameManager() => GameObject.FindObjectsOfType<GameManager>()[0];
+    private GameManager GetGameManager() => GameObject.FindObjectOfType<GameManager>();
 
     private void Start()
     {
@@ -33,11 +33,11 @@ public class MainChartManager : MonoBehaviour
 
     public void Tick()
     {
-        List<int> priceHistory = currentCorporation.priceHistory;
+        List<long> priceHistory = currentCorporation.priceHistory;
 
         if (priceHistory.Count == 0)
         {
-            priceHistory = new List<int>();
+            priceHistory = new List<long>();
             priceHistory.Add(0);
         }
 
@@ -72,9 +72,15 @@ public class MainChartManager : MonoBehaviour
     {
         gameManager ??= GetGameManager();
 
-        int price = currentCorporation.ParValue * amount;
+        if (gameManager.game.cash <= 0) return;
 
-        if (gameManager.game.cash < price) return;
+        long price = currentCorporation.ParValue * amount;
+        
+        if (gameManager.game.cash < price)
+        {
+            amount = (int)(gameManager.game.cash / currentCorporation.ParValue);
+            price = currentCorporation.ParValue * amount;
+        }
         
         gameManager.game.cash -= price;
         gameManager.game.shares[currentCorporation] += amount;
@@ -84,13 +90,12 @@ public class MainChartManager : MonoBehaviour
     {
         gameManager ??= GetGameManager();
         
-        int price = currentCorporation.ParValue * amount;
+        long price = currentCorporation.ParValue * amount;
 
         if (gameManager.game.shares[currentCorporation] < amount)
         {
-            gameManager.game.cash += currentCorporation.ParValue * gameManager.game.shares[currentCorporation];
-            gameManager.game.shares[currentCorporation] = 0;
-            return;
+            amount = gameManager.game.shares[currentCorporation];
+            price = currentCorporation.ParValue * amount;
         }
         
         gameManager.game.cash += price;

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d24e8eb014761607a243b87a2c5ec4e, type: 3}
+  m_Name: Virus4Event
+  m_EditorClassIdentifier: 
+  headerSprite: {fileID: 21300000, guid: f31e9662b07c24853bbcdcafe38d3de6, type: 3}
+  header: "\uC0AC\uD68C\uC801 \uAC70\uB9AC\uB450\uAE30 \uAC15\uD654"
+  description: "\uC815\uBD80\uC5D0\uC11C \uC0AC\uD68C\uC801 \uAC70\uB9AC\uB450\uAE30\uB97C
+    \uAC15\uD654\uD588\uC2B5\uB2C8\uB2E4.\n\uC624\uB79C \uAE30\uAC04\uB3D9\uC548
+    \uC0AC\uD68C\uC801 \uAC70\uB9AC\uB450\uAE30\uB97C \uC9C4\uD589\uD588\uC9C0\uB9CC
+    \uD070 \uC18C\uB4DD\uC774 \uC5C6\uC5B4 \uC0AC\uD68C\uC801 \uAC70\uB9AC\uB450\uAE30\uB97C
+    \uAC15\uD654\uD55C \uAC83\uC73C\uB85C \uC608\uCE21\uB429\uB2C8\uB2E4."
+  buttonText: "\uB0B4 \uC0DD\uD65C\uC740 \uBC14\uC774\uB7EC\uC2A4 \uC804\uC758 \uC0DD\uD65C\uACFC
+    \uBCC0\uD558\uC9C0 \uC54A\uC558\uC5B4"
+  corporationEffectApplications:
+  - type: 4
+    effect:
+      maxIncreaseRateIncrease: 0.0015
+      minIncreaseRateIncrease: 0
+      duration: 180
+      timer: 0
+  - type: 1
+    effect:
+      maxIncreaseRateIncrease: 0.0015
+      minIncreaseRateIncrease: 0
+      duration: 180
+      timer: 0

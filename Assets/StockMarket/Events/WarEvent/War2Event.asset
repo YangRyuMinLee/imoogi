@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96936704084c28e66806f34e9e7a72ee, type: 3}
+  m_Name: War2Event
+  m_EditorClassIdentifier: 
+  headerSprite: {fileID: 21300000, guid: 89f32ed2680a344aebb27b37c42b738f, type: 3}
+  header: "\uCC9C\uC5F0\uAC00\uC2A4\uC640 \uC11D\uC720 \uAC00\uACA9 \uAE09\uB4F1"
+  description: "\uCC9C\uC5F0\uAC00\uC2A4\uC640 \uC11D\uC720\uB97C \uC218\uCD9C\uB7C9
+    1\uC704 \uC544\uC774\uB098\uC774\uD2F0\uB4DC \uC5F0\uBC29\uC774 \uC804\uC7C1\uC5D0
+    \uCC38\uC804\uD588\uAE30\uC5D0 \uC218\uCD9C\uC774 \uAE09\uACA9\uC774 \uAC10\uC18C\uD558\uBA70
+    \uCC9C\uC5F0\uAC00\uC2A4\uC640 \uC11D\uC720 \uAC12\uC774 \uD3ED\uB4F1\uD558\uBA70
+    \uC6B0\uC8FC \uC0B0\uC5C5\uC774 \uBD88\uC548\uD55C \uC804\uB9DD\uC774 \uC608\uCE21\uB429\uB2C8\uB2E4."
+  buttonText: "\uB09C\uBC29\uBE44 \uC65C \uC774\uB798"
+  type: 2
+  rate: -0.3

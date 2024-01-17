@@ -27,11 +27,11 @@ public class StatusBar : MonoBehaviour
         }
     }
 
-    public void SetCash(int value) {
+    public void SetCash(long value) {
         cashText.text = value.ToString("#,##").Replace(',', ' ') + " 유동여의";
     }
 
-    public void SetAsset(int value) {
+    public void SetAsset(long value) {
         assetText.text = value.ToString("#,##").Replace(',', ' ') + " 총여의";
     }
 }

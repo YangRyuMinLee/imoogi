@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96936704084c28e66806f34e9e7a72ee, type: 3}
+  m_Name: Tech6Event
+  m_EditorClassIdentifier: 
+  headerSprite: {fileID: 21300000, guid: 9d7825fda327e4638bb6355ae24afe71, type: 3}
+  header: "\uC774\uB300\uD45C \uBB34\uD55C \uC5D0\uB108\uC9C0 \uC2E4\uD604\uD558\uB2E4!"
+  description: "\uC5EC\uC758\uD000\uD140\uC758 \uC774\uB300\uD45C\uAC00 \uB9C8\uCE68\uB0B4
+    \uBB34\uD55C \uC5D0\uB108\uC9C0\uC758 \uC2E4\uBB3C\uC744 \uACF5\uAC1C\uD588\uC2B5\uB2C8\uB2E4.\n\uC774\uB294
+    \uC6B0\uB9AC\uC758 \uC0B6\uC5D0 \uC5C4\uCCAD\uB09C \uD601\uBA85\uC744 \uAC00\uC838\uC62C
+    \uAC83\uC73C\uB85C \uBCF4\uC785\uB2C8\uB2E4."
+  buttonText: "GDP 1\uC704 \uAC00\uC790!!"
+  type: 6
+  rate: 5
