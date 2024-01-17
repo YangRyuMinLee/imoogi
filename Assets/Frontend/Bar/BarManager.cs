@@ -17,12 +17,16 @@ public class BarManager : MonoBehaviour
 
     public void Show(float duration = 1f)
     {
+        if (gameManager.game.cash >= 50000){
+            gameManager.game.cash -= 50000;
+        }
+        else {
+            return;
+        }
         //random get
         int randomNumber = new Random().Next(0, listenList.Count);
         listenText.text = listenList[randomNumber];
-        
-        if(gameManager.game.cash >= 50000)
-            gameManager.game.cash -= 50000;
+
 
         time = duration;
     }
