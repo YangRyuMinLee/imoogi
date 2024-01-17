@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96936704084c28e66806f34e9e7a72ee, type: 3}
   m_Name: SuddenEvent9
   m_EditorClassIdentifier: 
-  headerSprite: {fileID: 0}
+  headerSprite: {fileID: 21300000, guid: 01d73834ed830482989e7d378931ec6f, type: 3}
   header: "\uC0BC\uC6A9\uB85C\uCF13 \uC2DC\uD5D8 \uBC1C\uC0AC \uC2E4\uD328"
   description: "\uC5B4\uC81C \uC2DC\uD589\uB41C \uC0BC\uC6A9\uB85C\uCF13\uC758 \uC2DC\uD5D8
     \uBC1C\uC0AC\uAC00 \uC2E4\uD328\uB85C \uB3CC\uC544\uAC14\uC2B5\uB2C8\uB2E4.\n\uC774\uBC88
