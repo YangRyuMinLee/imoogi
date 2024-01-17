@@ -1558,7 +1558,7 @@ GameObject:
   - component: {fileID: 473925160}
   m_Layer: 5
   m_Name: HorseButton_1
-  m_TagString: Untagged
+  m_TagString: Horse1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3074,7 +3074,7 @@ GameObject:
   - component: {fileID: 1222622356}
   m_Layer: 5
   m_Name: HorseButton_4
-  m_TagString: Untagged
+  m_TagString: Horse4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3459,7 +3459,7 @@ GameObject:
   - component: {fileID: 1410542812}
   m_Layer: 5
   m_Name: HorseButton_3
-  m_TagString: Untagged
+  m_TagString: Horse3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4141,7 +4141,7 @@ MonoBehaviour:
   titletext: {fileID: 2073999315}
   selectxt: {fileID: 1011646541}
   btnoff: {fileID: 1955918330}
-  obj: {fileID: 1531543139}
+  horsemove: {fileID: 1531543139}
 --- !u!1 &1582938053
 GameObject:
   m_ObjectHideFlags: 0
@@ -5289,7 +5289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6042235762233305824, guid: 73d2e6afa722883e089bd08ae537f39d, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 300
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 6042235762233305824, guid: 73d2e6afa722883e089bd08ae537f39d, type: 3}
       propertyPath: m_SizeDelta.y
@@ -5325,7 +5325,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6042235762233305824, guid: 73d2e6afa722883e089bd08ae537f39d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -150
+      value: -200
       objectReference: {fileID: 0}
     - target: {fileID: 6042235762233305824, guid: 73d2e6afa722883e089bd08ae537f39d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -5345,7 +5345,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8170528904345002386, guid: 73d2e6afa722883e089bd08ae537f39d, type: 3}
       propertyPath: m_fontSize
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8170528904345002386, guid: 73d2e6afa722883e089bd08ae537f39d, type: 3}
       propertyPath: m_fontStyle
@@ -5353,7 +5353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8170528904345002386, guid: 73d2e6afa722883e089bd08ae537f39d, type: 3}
       propertyPath: m_fontSizeBase
-      value: 50
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8170528904345002386, guid: 73d2e6afa722883e089bd08ae537f39d, type: 3}
       propertyPath: m_TextStyleHashCode
@@ -5570,7 +5570,7 @@ GameObject:
   - component: {fileID: 2055162021}
   m_Layer: 5
   m_Name: HorseButton_2
-  m_TagString: Untagged
+  m_TagString: Horse2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
