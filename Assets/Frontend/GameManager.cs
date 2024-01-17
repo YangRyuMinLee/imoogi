@@ -120,7 +120,6 @@ public class GameManager : MonoBehaviour
     public void SaveFile()
     {
         string json = JsonUtility.ToJson(game);
-        Debug.Log(Application.persistentDataPath);
         if(File.Exists(path)){
             File.Delete(path);
         }
