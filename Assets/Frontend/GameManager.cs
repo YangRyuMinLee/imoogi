@@ -6,7 +6,7 @@ public class GameManager : GameManagerBase
 {
 
     [HideInInspector] public Game game;
-    private float Timer
+    protected float Timer
     {
         get => timer;
         set
@@ -15,7 +15,7 @@ public class GameManager : GameManagerBase
             statusBar.SetTimerFill(game.time, timer);
         }
     }
-    private float Speed
+    protected float Speed
     {
         get => speed;
         set
@@ -25,9 +25,9 @@ public class GameManager : GameManagerBase
         }
     }
 
-    private float timer;
-    private float speed;
-    private bool Paused
+    protected float timer;
+    protected float speed;
+    protected bool Paused
     {
         get => paused;
         set
@@ -36,11 +36,11 @@ public class GameManager : GameManagerBase
             statusBar.SetSpeed(paused, speed);
         }
     }
-    private bool paused;
+    protected bool paused;
     [SerializeField] private EventDisplay eventDisplay;
-    [SerializeField] private StatusBar statusBar;
+    [SerializeField] protected StatusBar statusBar;
 
-    private MenuStack menuStack;
+    protected MenuStack menuStack;
 
     private string path;
 

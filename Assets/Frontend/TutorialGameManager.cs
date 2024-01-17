@@ -1,18 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
-public class TutorialGameManager : MonoBehaviour
+public class TutorialGameManager : GameManager
 {
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        game = new Game();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        menuStack = GameObject.FindGameObjectWithTag("MenuStack").GetComponent<MenuStack>();
+        Speed = 1f;
+        Paused = false;
+        statusBar.SetDate(game.time);
     }
 }
