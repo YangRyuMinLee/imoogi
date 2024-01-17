@@ -6,9 +6,14 @@ public class SceneChanger : MonoBehaviour
 {
     [SerializeField] private bool clickToMenuScene;
 
+    private void Start()
+    {
+        Time.timeScale = 1f;
+    }
+
     private void Update()
     {
-        if (Input.anyKeyDown && clickToMenuScene)
+        if (Input.GetMouseButtonDown(0) && clickToMenuScene)
         {
             ChangeScene("MenuScene");
         }
