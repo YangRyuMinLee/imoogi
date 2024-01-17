@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dc07afc43a475ef2b00a55811faee10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newspaper: {fileID: 3160074225049902400}
   headerText: {fileID: 4670555339210901900}
   headerImage: {fileID: 147289166732085404}
   descriptionText: {fileID: 1688307421803544024}

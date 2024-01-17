@@ -4,6 +4,7 @@ using TMPro;
 
 public class EventDisplay : MonoBehaviour
 {
+    [SerializeField] private GameObject newspaper;
     [SerializeField] private TextMeshProUGUI headerText;
     [SerializeField] private Image headerImage;
     [SerializeField] private TextMeshProUGUI descriptionText;
@@ -15,6 +16,6 @@ public class EventDisplay : MonoBehaviour
         headerImage.sprite = e.headerSprite;
         descriptionText.text = e.description;
         buttonText.text = e.buttonText;
-        headerImage.gameObject.SetActive(e.header != "");
+        newspaper.SetActive(e.header != "");
     }
 }
