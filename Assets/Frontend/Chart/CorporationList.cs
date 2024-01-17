@@ -6,7 +6,7 @@ public class CorporationList : MonoBehaviour
 {
     [SerializeField] private CorporationButton corporationButtonPrefab;
     private CorporationButton[] buttons;
-    private Dictionary<Corporation, int> shares;
+    private SerializableDictionary<Corporation, int> shares;
     
     private void Start()
     {

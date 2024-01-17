@@ -1,0 +1,112 @@
+{
+	"time": {
+		"progress": 0
+	},
+	"cash": 1000000,
+	"shares": {
+		"list": [
+			{
+				"Key": {
+					"name": "용찌",
+					"type": 0,
+					"parValue": 6000,
+					"maxIncreaseRate": 0.019999999552965164,
+					"minIncreaseRate": -0.019999999552965164,
+					"priceHistory": [
+						6000
+					],
+					"effects": []
+				},
+				"Value": 0
+			},
+			{
+				"Key": {
+					"name": "드래곤 앤 던전",
+					"type": 1,
+					"parValue": 10000,
+					"maxIncreaseRate": 0.019999999552965164,
+					"minIncreaseRate": -0.019999999552965164,
+					"priceHistory": [
+						10000
+					],
+					"effects": []
+				},
+				"Value": 0
+			},
+			{
+				"Key": {
+					"name": "삼용로켓",
+					"type": 2,
+					"parValue": 200000,
+					"maxIncreaseRate": 0.019999999552965164,
+					"minIncreaseRate": -0.019999999552965164,
+					"priceHistory": [
+						200000
+					],
+					"effects": []
+				},
+				"Value": 0
+			},
+			{
+				"Key": {
+					"name": "용가리푸드",
+					"type": 3,
+					"parValue": 3000,
+					"maxIncreaseRate": 0.019999999552965164,
+					"minIncreaseRate": -0.019999999552965164,
+					"priceHistory": [
+						3000
+					],
+					"effects": []
+				},
+				"Value": 0
+			},
+			{
+				"Key": {
+					"name": "이무제약",
+					"type": 4,
+					"parValue": 80000,
+					"maxIncreaseRate": 0.019999999552965164,
+					"minIncreaseRate": -0.019999999552965164,
+					"priceHistory": [
+						80000
+					],
+					"effects": []
+				},
+				"Value": 0
+			},
+			{
+				"Key": {
+					"name": "네이무",
+					"type": 5,
+					"parValue": 30000,
+					"maxIncreaseRate": 0.019999999552965164,
+					"minIncreaseRate": -0.019999999552965164,
+					"priceHistory": [
+						30000
+					],
+					"effects": []
+				},
+				"Value": 0
+			},
+			{
+				"Key": {
+					"name": "여의퀀텀",
+					"type": 6,
+					"parValue": 1200,
+					"maxIncreaseRate": 0.019999999552965164,
+					"minIncreaseRate": -0.019999999552965164,
+					"priceHistory": [
+						1200
+					],
+					"effects": []
+				},
+				"Value": 0
+			}
+		]
+	},
+	"remainingEvents": [],
+	"eventTriggerer": {
+		"instanceID": 28314
+	}
+}
