@@ -70,7 +70,7 @@ public class GameManager : GameManagerBase
         statusBar.SetDate(game.time);
     }
 
-    private void Update()
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Alpha0))
         {
