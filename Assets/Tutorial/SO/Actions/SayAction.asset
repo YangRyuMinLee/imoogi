@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a1560f236a84f2b944a22cc1fb54e88, type: 3}
+  m_Name: SayAction
+  m_EditorClassIdentifier: 
+  textList:
+  - text: "\uB098\uB294 \uC6A9"
+    duration: 3
+    talkBallonPosIndex: 0
+  - text: "\uC8FC\uC2DD\uC5D0 \uB300\uD574 \uC54C\uB824\uC8FC\uC9C0\uC6A9"
+    duration: 2
+    talkBallonPosIndex: 0
+  - text: "\uC0C1\uB2E8\uC744 \uBCF4\uBA74 \uB0A0\uC9DC, \uC720\uB3D9\uC5EC\uC758,
+      \uCD1D\uC5EC\uC758\uAC00 \uC788\uC9C0\uC6A9?"
+    duration: 3
+    talkBallonPosIndex: 2
+  - text: "\uB0A0\uC9DC\uC758 \uD68C\uC0C9 \uBC14\uAC00 6\uBC88 \uC9C0\uB098\uBA74
+      \uD558\uB8E8\uAC00 \uC9C0\uB098\uACE0\uC6A9"
+    duration: 3
+    talkBallonPosIndex: 2
+  - text: "\uC720\uB3D9\uC5EC\uC758\uB294 \uB108\uAC00 \uAC00\uC9C0\uACE0 \uC788\uB294
+      \uD604\uAE08\uC774\uACE0\uC6A9"
+    duration: 3
+    talkBallonPosIndex: 2
+  - text: "\uCD1D\uC5EC\uC758\uB294 \uD604\uAE08\uACFC \uC8FC\uC2DD\uC744 \uD569\uCE5C
+      \uBAA8\uB4E0 \uC790\uC0B0\uC774\uB2E4\uC6A9"
+    duration: 3
+    talkBallonPosIndex: 2
+  - text: "\uC774\uCABD\uC740 \uC8FC\uC2DD\uD68C\uC0AC \uBAA9\uB85D\uC774\uACE0"
+    duration: 2
+    talkBallonPosIndex: 0
+  - text: "\uC774\uCABD\uC740 \uC8FC\uC2DD \uCC28\uD2B8 \uC774\uB2E4\uC6A9"
+    duration: 2
+    talkBallonPosIndex: 0
+  - text: "\uC8FC\uC2DD \uAC70\uB798\uB294"
+    duration: 2
+    talkBallonPosIndex: 0
+  - text: "\uB9E4\uC218 \uBC84\uD2BC\uC740 1\uAC1C, "
+    duration: 2
+    talkBallonPosIndex: 0
+  - text: "100 \uBC84\uD2BC\uC740 \uCD5C\uB300 100\uAC1C \uAE4C\uC9C0 \uAD6C\uB9E4\uD55C\uB2E4\uC6A9 "
+    duration: 3
+    talkBallonPosIndex: 0
+  - text: "\uB9E4\uB3C4 \uBC84\uD2BC\uC740 1\uAC1C, "
+    duration: 2
+    talkBallonPosIndex: 0
+  - text: "100 \uBC84\uD2BC\uC740\uC740 \uCD5C\uB300 100\uAC1C \uAE4C\uC9C0 \uD310\uB9E4\uD55C\uB2E4\uC6A9"
+    duration: 3
+    talkBallonPosIndex: 0
+  - text: "\uADF8\uB7FC \uD55C\uBC88 \uD574\uBCF4\uC790\uAD6C\uC6A9"
+    duration: 3
+    talkBallonPosIndex: 0

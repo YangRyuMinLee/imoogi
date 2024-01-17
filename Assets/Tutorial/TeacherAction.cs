@@ -1,7 +1,8 @@
+using System;
+using System.Threading.Tasks;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Tutorial/TeacherAction", fileName = "TeacherAction")]
-public class TeacherAction : ScriptableObject
+public abstract class TeacherAction : ScriptableObject
 {
     protected TutorialGameManager game;
     protected TeacherManager acter;

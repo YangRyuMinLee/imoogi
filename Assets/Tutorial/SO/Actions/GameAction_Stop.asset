@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62d6ee603d59fccdc86d247c0fd93ed2, type: 3}
-  m_Name: TutorialEventTriggerer
+  m_Script: {fileID: 11500000, guid: b85de5fdcfc6436f9616c9001fc73efa, type: 3}
+  m_Name: GameAction_Stop
   m_EditorClassIdentifier: 
-  timeEventTriggers: []
-  randomEventTriggers: []
-  repeatEventTriggers:
-  - e: {fileID: 11400000, guid: ad4772c0a0ec2490180e803042681962, type: 2}
+  status: 1

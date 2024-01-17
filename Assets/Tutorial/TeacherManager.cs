@@ -1,14 +1,15 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 
 public class TeacherManager : MonoBehaviour
 {
     [Serializable]
-    public struct ActionWithTick
+    public struct ActionWithDate
     {
+        public float wait;
         public int year;
         public int month;
         public int day;
@@ -16,7 +17,7 @@ public class TeacherManager : MonoBehaviour
     }
 
     [Header("Action"), Tooltip("Please order by tick"), SerializeField]
-    private List<ActionWithTick> actions;
+    private List<ActionWithDate> actions;
     
     private int tickCnt;
 
@@ -25,21 +26,23 @@ public class TeacherManager : MonoBehaviour
 
     [SerializeField] private List<Transform> talkballonAttachPositions;
 
+    private GameManagerBase gameManager;
+
+    public GameObject darken;
+    public RectTransform image;
+    
     public void Start()
     {
-        GameManagerBase gameManager = GameObject.FindObjectOfType<GameManagerBase>();
+        gameManager = GameObject.FindObjectOfType<GameManagerBase>();
         gameManager.onTickEvent += Tick;
-        
-        // play test
-        foreach (ActionWithTick action in actions)
-        {
-            action.action.Init(gameManager, this);
-            action.action.Act();
-        }
     }
 
     public void Tick()
     {
+        if (gameManager.GetGame().time.progress % 6 == 1)
+        {
+            Act();
+        }
     }
 
     public void ChangeAttachPosition(int index)
@@ -47,21 +50,25 @@ public class TeacherManager : MonoBehaviour
         talkballon.transform.position = talkballonAttachPositions[index].position;
     }
 
-    #region Test In Editor
-
-    [Header("Test"), Space(10), SerializeField]
-    private int testIndex;
-
-    [ContextMenu("Change Attach Position")]
-    private void ChangeAttachPositionEditor()
-    {
-        ChangeAttachPosition(testIndex);
-    }
-
-    #endregion
-
     public void Say(string newText)
     {
         talkballon.text = newText;
+    }
+
+    private async void Act()
+    {
+        foreach (ActionWithDate action in actions)
+        {
+            if (!CompareDateTime(gameManager.GetGame().time.dateTime, action.year, action.month, action.day)) continue;
+            
+            await Task.Delay(TimeSpan.FromSeconds(action.wait));
+            action.action.Init(gameManager, this);
+            action.action.Act();
+        }
+    }
+    
+    private bool CompareDateTime(DateTime dateTime, int year, int month, int day)
+    {
+        return dateTime.Year == year && dateTime.Month == month && dateTime.Day == day;
     }
 }

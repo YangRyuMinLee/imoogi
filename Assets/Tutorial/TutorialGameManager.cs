@@ -24,7 +24,7 @@ public class TutorialGameManager : GameManager
     {
         menuStack = GameObject.FindGameObjectWithTag("MenuStack").GetComponent<MenuStack>();
         Speed = 1f;
-        Paused = true;
+        Paused = false;
         statusBar.SetDate(game.time);
         game.eventTriggerer = eventTriggerer;
     }

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2443cffb44e04d7d9b19f13e5d16cd1, type: 3}
-  m_Name: TeacherMoveAction_Appear
+  m_Name: MoveAction_Middle
   m_EditorClassIdentifier: 
-  time: 3
-  target: {x: -32.1, y: -71.5}
+  time: 0.5
+  target: {x: -80.6, y: -30}

@@ -1,6 +1,4 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 
@@ -12,19 +10,20 @@ public class TeacherMoveAction : TeacherAction
     
     public override void Act()
     {
-        TeacherManager action = acter.GetComponent<TeacherManager>();
-        action.StartCoroutine(InterpolateMove());
+        acter.StartCoroutine(InterpolateMove());
     }
 
     IEnumerator InterpolateMove()
     {
         float dt = 0f;
+        Vector2 startPos = acter.transform.localPosition;
             
         while (dt <= time)
         {
             dt += Time.deltaTime;
-            Vector2 pos = Vector2.Lerp(acter.transform.localPosition, target, dt / time);
+            Vector2 pos = Vector2.Lerp(startPos, target, dt / time);
             acter.transform.localPosition = pos;
+            
             yield return null;
         }
     }
