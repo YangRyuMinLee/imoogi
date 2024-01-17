@@ -11,15 +11,32 @@ public class BarManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI listenText;
     [SerializeField] private List<string> listenList;
+    private float time = 0f;
+    private GameManager gameManager;
 
-    public async void Show(float duration = 0.1f)
+    private void Start()
+    {
+        gameManager = GameObject.FindObjectOfType<GameManager>();
+    }
+
+    public async void Show(float duration = 1f)
     {
         //random get
         int randomNumber = new Random().Next(0, listenList.Count);
         listenText.text = listenList[randomNumber];
         
-        await Task.Delay(TimeSpan.FromSeconds(duration));
+        if(gameManager.game.cash >= 50000)
+            gameManager.game.cash -= 50000;
 
-        listenText.text = string.Empty;
+        time = duration;
+    }
+
+    private void Update()
+    {
+        time -= Time.deltaTime;
+        if (time <= 0)
+        {
+            listenText.text = string.Empty;
+        }
     }
 }
