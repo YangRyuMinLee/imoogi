@@ -1,18 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CrashScripts : MonoBehaviour
 {
-    public Text rankText;
+    public TextMeshProUGUI rankText;
     int count = 0;
 
-    private void Awake()
-    {
-        rankText.gameObject.SetActive(false);
-    }
     void OnTriggerEnter2D(Collider2D o)
     {
         count++;
