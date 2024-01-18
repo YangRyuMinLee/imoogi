@@ -9,6 +9,7 @@ public class EventDisplay : MonoBehaviour
     [SerializeField] private Image headerImage;
     [SerializeField] private TextMeshProUGUI descriptionText;
     [SerializeField] private TextMeshProUGUI buttonText;
+    [SerializeField] private AudioSource soundEffect;
 
     public void SetEvent(Event e) // Note to self: do not name a class "Event" again
     {
@@ -17,5 +18,6 @@ public class EventDisplay : MonoBehaviour
         descriptionText.text = e.description;
         buttonText.text = e.buttonText;
         newspaper.SetActive(e.header != "");
+        soundEffect.Play();
     }
 }
