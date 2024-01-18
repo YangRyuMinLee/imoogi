@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a2b6963165f9124ca596438148e0462, type: 3}
-  m_Name: RentEvent
+  m_Script: {fileID: 11500000, guid: b2443cffb44e04d7d9b19f13e5d16cd1, type: 3}
+  m_Name: MoveAction_UP
   m_EditorClassIdentifier: 
-  headerSprite: {fileID: 0}
-  header: 
-  description: "\uC6D4\uC138\uB2E4.\n50000\uC5EC\uC758\uB2E4."
-  buttonText: "\uB0B4 \uB3C8!!!!"
-  money: -50000
+  waitSecond: 5
+  time: 0.5
+  target: {x: -140.6, y: 10}

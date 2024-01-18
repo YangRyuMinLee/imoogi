@@ -14,4 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MiniGameScene.unity
     guid: 8341bb1aaf3cfba4f95ee7d686767aa1
+  - enabled: 1
+    path: Assets/Scenes/TutorialScene.unity
+    guid: cf8322858f5644d1faed1c87988eca11
+  - enabled: 1
+    path: Assets/Scenes/Endings/ClearScene.unity
+    guid: d0c4b9fc7f1804eca9f417c808fbd424
+  - enabled: 1
+    path: Assets/Scenes/Endings/DieScene.unity
+    guid: 03528340d63474a4cb479989eba75ca2
   m_configObjects: {}

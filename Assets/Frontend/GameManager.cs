@@ -2,11 +2,11 @@ using UnityEngine;
 using System.IO;
 using System.Text;
 
-public class GameManager : MonoBehaviour
+public class GameManager : GameManagerBase
 {
 
     [HideInInspector] public Game game;
-    private float Timer
+    protected float Timer
     {
         get => timer;
         set
@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
             statusBar.SetTimerFill(game.time, timer);
         }
     }
-    private float Speed
+    protected float Speed
     {
         get => speed;
         set
@@ -25,9 +25,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private float timer;
-    private float speed;
-    private bool Paused
+    protected float timer;
+    protected float speed;
+    protected bool Paused
     {
         get => paused;
         set
@@ -36,14 +36,11 @@ public class GameManager : MonoBehaviour
             statusBar.SetSpeed(paused, speed);
         }
     }
-    private bool paused;
+    protected bool paused;
     [SerializeField] private EventDisplay eventDisplay;
-    [SerializeField] private StatusBar statusBar;
+    [SerializeField] protected StatusBar statusBar;
 
-    private MenuStack menuStack;
-
-    public delegate void TickEventHandler();
-    public TickEventHandler onTickEvent;
+    protected MenuStack menuStack;
 
     private string path;
 
@@ -73,7 +70,7 @@ public class GameManager : MonoBehaviour
         statusBar.SetDate(game.time);
     }
 
-    private void Update()
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Alpha0))
         {
@@ -159,4 +156,7 @@ public class GameManager : MonoBehaviour
         game = JsonUtility.FromJson<Game>(json);
         game.eventTriggerer = eventTriggerer;
     }
+
+    public override Game GetGame() => game;
+    public override event TickEventHandler onTickEvent;
 }
