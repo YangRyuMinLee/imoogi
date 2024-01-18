@@ -56,6 +56,7 @@ MonoBehaviour:
   headerImage: {fileID: 147289166732085404}
   descriptionText: {fileID: 1688307421803544024}
   buttonText: {fileID: 9156959478919981747}
+  soundEffect: {fileID: 0}
 --- !u!1 &3160074225049902400
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,6 +629,14 @@ PrefabInstance:
     - target: {fileID: 128151151761828285, guid: 5489f9c87a7f1a9868ff1e6ecd4da369, type: 3}
       propertyPath: m_text
       value: Button Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 128151151761828285, guid: 5489f9c87a7f1a9868ff1e6ecd4da369, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 128151151761828285, guid: 5489f9c87a7f1a9868ff1e6ecd4da369, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 128151151761828285, guid: 5489f9c87a7f1a9868ff1e6ecd4da369, type: 3}
       propertyPath: m_HorizontalAlignment

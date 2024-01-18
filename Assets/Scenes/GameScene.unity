@@ -3052,10 +3052,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: EventStack
       objectReference: {fileID: 0}
+    - target: {fileID: 244669662923870934, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4670555339210901900, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
+      propertyPath: m_fontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4670555339210901900, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
+      propertyPath: m_enableWordWrapping
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6706950010503320809, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
       propertyPath: soundEffect
       value: 
       objectReference: {fileID: 1927928242}
+    - target: {fileID: 6750288872492736961, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750288872492736961, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750288872492736961, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750288872492736961, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750288872492736961, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750288872492736961, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6750288872492736961, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0000076293945
+      objectReference: {fileID: 0}
     - target: {fileID: 8022110720280919935, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3134,6 +3174,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8022110720280919935, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9156959478919981747, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
+      propertyPath: m_fontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9156959478919981747, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9156959478919981747, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9156959478919981747, guid: 87b77a60cfec56ae9b616c4ad4c217b3, type: 3}
+      propertyPath: m_enableWordWrapping
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
