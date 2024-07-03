@@ -148,6 +148,51 @@ MonoBehaviour:
     month: 12
     day: 31
     probability: 1
+  - e: {fileID: 11400000, guid: fcf87a4b587d646edbb48aed1e5969e2, type: 2}
+    year: 7998
+    month: 4
+    day: 1
+    probability: 1
+  - e: {fileID: 11400000, guid: ea983d7c080df489799280e8184a53ef, type: 2}
+    year: 7999
+    month: 4
+    day: 10
+    probability: 1
+  - e: {fileID: 11400000, guid: d0ca64c0d9b524e3880789b9d069caba, type: 2}
+    year: 7998
+    month: 5
+    day: 10
+    probability: 1
+  - e: {fileID: 11400000, guid: dc749dba6a42946b2bd490bd3bd87ffa, type: 2}
+    year: 7998
+    month: 5
+    day: 27
+    probability: 1
+  - e: {fileID: 11400000, guid: cbe449e27c5ef402c9f3316619aaabd7, type: 2}
+    year: 7997
+    month: 4
+    day: 15
+    probability: 1
+  - e: {fileID: 11400000, guid: 5cbdee1c769cf44a095e7aa58701f66a, type: 2}
+    year: 7997
+    month: 4
+    day: 23
+    probability: 1
+  - e: {fileID: 11400000, guid: 5bdbdf08805d2483d8ab4512908f0522, type: 2}
+    year: 7998
+    month: 7
+    day: 20
+    probability: 1
+  - e: {fileID: 11400000, guid: d9f822f275df145848becc18189d1b77, type: 2}
+    year: 7998
+    month: 8
+    day: 10
+    probability: 1
+  - e: {fileID: 11400000, guid: 6b7fe2c9245d3463da5d7546cb3402bd, type: 2}
+    year: 7998
+    month: 8
+    day: 21
+    probability: 1
   randomEventTriggers:
   - e: {fileID: 11400000, guid: 98e0c299be9199543bf287987a761611, type: 2}
   - e: {fileID: 11400000, guid: 98e0c299be9199543bf287987a761611, type: 2}

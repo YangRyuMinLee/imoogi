@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96936704084c28e66806f34e9e7a72ee, type: 3}
+  m_Name: SanctionEvent
+  m_EditorClassIdentifier: 
+  headerSprite: {fileID: 21300000, guid: 03ee41dc2feb643eb9c6a3e29f0e14ab, type: 3}
+  header: "\uC6A9\uCC0C CEO\uC758 \uCDA9\uACA9\uC801\uC778 \uCC28\uBCC4\uBC1C\uC5B8!!"
+  description: "\uCD5C\uADFC \uC6A9\uCC0C \uAE30\uC5C5\uC758 CEO\uC758 \uCDA9\uACA9\uC801\uC778
+    \uCC28\uBCC4 \uBC1C\uC5B8\uC73C\uB85C \uD654\uC81C\uAC00 \uB418\uACE0 \uC788\uB2E4."
+  buttonText: "\uCE94\uC2AC \uCEEC\uCCD0\uAC00 \uB54C\uB85C\uB294 \uC88B\uC9C0"
+  type: 0
+  rate: -0.2

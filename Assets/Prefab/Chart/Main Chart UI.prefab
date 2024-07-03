@@ -1641,7 +1641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7932812798918154490, guid: 905d1782b4686eef1b8fdead998ef331, type: 3}
       propertyPath: m_text
-      value: "\uCD5C\uC900 \uBC43\uC0B4\n"
+      value: "\uB85C\uB529 \uC911..."
       objectReference: {fileID: 0}
     - target: {fileID: 7932812798918154490, guid: 905d1782b4686eef1b8fdead998ef331, type: 3}
       propertyPath: m_fontColor.b

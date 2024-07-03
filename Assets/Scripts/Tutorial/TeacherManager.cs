@@ -36,6 +36,11 @@ public class TeacherManager : MonoBehaviour
     {
         gameManager = GameObject.FindObjectOfType<GameManagerBase>();
         gameManager.onTickEvent += Tick;
+
+        foreach (var action in actions)
+        {
+            action.action.Init();
+        }
     }
 
     public void Tick()

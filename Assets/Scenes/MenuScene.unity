@@ -356,7 +356,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: -0.041999817}
+  m_AnchoredPosition: {x: 0, y: -0.041992188}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &857845499
@@ -518,7 +518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2156561605484910905, guid: 8d05270fc05e981c2988efe5bafcf26f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -197.54897
+      value: -191.91011
       objectReference: {fileID: 0}
     - target: {fileID: 2156561605484910905, guid: 8d05270fc05e981c2988efe5bafcf26f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -807,7 +807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5525594463984423816, guid: 905d1782b4686eef1b8fdead998ef331, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -177.54897
+      value: -171.91011
       objectReference: {fileID: 0}
     - target: {fileID: 5525594463984423816, guid: 905d1782b4686eef1b8fdead998ef331, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -827,9 +827,9 @@ PrefabInstance:
         2023 \uACA8\uC6B8 \uAC8C\uC784\uC7BC\uC744 \uC704\uD574 \uC81C\uC791\uB428.\n\uD300\n\uC774\uBCD1\uD6C8
         - \uD300\uC7A5, \uD504\uB85C\uADF8\uB798\uBC0D\n\uC774\uC2DC\uD615 - \uD504\uB85C\uADF8\uB798\uBC0D\n\uC591\uC758\uC131
         - \uC544\uD2B8\n\uBBFC\uC9C0\uBA85 - \uD504\uB85C\uADF8\uB798\uBC0D\n\uC720\uBA85\uD604
-        - \uC544\uD2B8\n\nThird-party assets\n\nGalmuri https://galmuri.quiple.dev/\nMade
-        by Minseo Lee\nOFL 1.1\n\nEntrance of the Gladiators\nComposed by Julius
-        Fu\u010D\xEDk\nPerformed by U.S. Marine Band\nhttps://www.marineband.marines.mil/Audio-Resources/Educational-Series/Live-in-Concert/\n\nCarment
+        - \uC544\uD2B8\n\uCD5C\uC900 - \uAE30\uD68D\n\nThird-party assets\n\nGalmuri
+        https://galmuri.quiple.dev/\nMade by Minseo Lee\nOFL 1.1\n\nEntrance of the
+        Gladiators\nComposed by Julius Fu\u010D\xEDk\nPerformed by U.S. Marine Band\nhttps://www.marineband.marines.mil/Audio-Resources/Educational-Series/Live-in-Concert/\n\nCarment
         Suite No.2: Habanera\nComposed by Georges Bizet\nPerformed by Papalin https://papalin.yas.mu/index.cgi.en\nCC-BY
         3.0\n\n\uD50C\uB808\uC774 \uD574\uC8FC\uC154\uC11C \uAC10\uC0AC\uD569\uB2C8\uB2E4!\n\n\uC81C\uC791\uC790
         \uBC0F \uC81C3\uC790 \uC790\uB8CC\n"
@@ -1062,6 +1062,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 914348655388516417, guid: 68fd9a645e9929e4eb8b011ee79a868c, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 914348655388516417, guid: 68fd9a645e9929e4eb8b011ee79a868c, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25

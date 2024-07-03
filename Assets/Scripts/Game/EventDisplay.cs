@@ -18,6 +18,6 @@ public class EventDisplay : MonoBehaviour
         descriptionText.text = e.description;
         buttonText.text = e.buttonText;
         newspaper.SetActive(e.header != "");
-        soundEffect?.Play();
+        if(soundEffect != null) soundEffect.Play();
     }
 }

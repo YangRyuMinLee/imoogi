@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93f22a99ce2ea42418f6d70c04579835, type: 3}
+  m_Name: Oil3Event
+  m_EditorClassIdentifier: 
+  headerSprite: {fileID: 0}
+  header: "\uC11D\uC720 \uBC1C\uACAC \uBC88\uBCF5"
+  description: "\uC5EC\uB860 \uD658\uAE30 \uC6A9 \uC774\uC288\uBAB0\uC774 \uC600\uB098,
+    \uC815\uBD80, \uC11D\uC720 \uB9E4\uC7A5 \uAC00\uB2A5\uC131 \uBC88\uBCF5"
+  buttonText: "\uB610 \uC18D\uB0D0?"
+  corporationRates:
+  - type: 2
+    rate: -0.2
+  - type: 6
+    rate: -0.2

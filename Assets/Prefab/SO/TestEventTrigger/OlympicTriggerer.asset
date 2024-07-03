@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d6ee603d59fccdc86d247c0fd93ed2, type: 3}
+  m_Name: OlympicTriggerer
+  m_EditorClassIdentifier: 
+  timeEventTriggers:
+  - e: {fileID: 11400000, guid: cbe449e27c5ef402c9f3316619aaabd7, type: 2}
+    year: 7997
+    month: 1
+    day: 2
+    probability: 1
+  - e: {fileID: 11400000, guid: 5cbdee1c769cf44a095e7aa58701f66a, type: 2}
+    year: 7997
+    month: 1
+    day: 3
+    probability: 1
+  - e: {fileID: 11400000, guid: 5bdbdf08805d2483d8ab4512908f0522, type: 2}
+    year: 7997
+    month: 1
+    day: 4
+    probability: 1
+  - e: {fileID: 11400000, guid: d9f822f275df145848becc18189d1b77, type: 2}
+    year: 7997
+    month: 1
+    day: 5
+    probability: 1
+  - e: {fileID: 11400000, guid: 6b7fe2c9245d3463da5d7546cb3402bd, type: 2}
+    year: 7997
+    month: 1
+    day: 6
+    probability: 1
+  randomEventTriggers: []
+  repeatEventTriggers: []

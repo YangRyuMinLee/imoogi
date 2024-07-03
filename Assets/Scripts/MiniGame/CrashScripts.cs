@@ -35,7 +35,7 @@ public class CrashScripts : MonoBehaviour
     void HorseCon_1(Collider2D o)
     {
         rankText.gameObject.SetActive(true);
-        rankText.text = "1번 말 승리!";
+        rankText.text = "1번 용 승리!";
         gameObject.GetComponent<CrashScripts>().enabled = false;
         wonHorse = 1;
         minigameEnder.End();
@@ -43,7 +43,7 @@ public class CrashScripts : MonoBehaviour
     void HorseCon_2(Collider2D o)
     {
         rankText.gameObject.SetActive(true);
-        rankText.text = "2번 말 승리!";
+        rankText.text = "2번 용 승리!";
         gameObject.GetComponent<CrashScripts>().enabled = false;
         wonHorse = 2;
         minigameEnder.End();
@@ -51,7 +51,7 @@ public class CrashScripts : MonoBehaviour
     void HorseCon_3(Collider2D o)
     {
         rankText.gameObject.SetActive(true);
-        rankText.text = "3번 말 승리!";
+        rankText.text = "3번 용 승리!";
         gameObject.GetComponent<CrashScripts>().enabled = false;
         wonHorse = 3;
         minigameEnder.End();
@@ -59,7 +59,7 @@ public class CrashScripts : MonoBehaviour
     void HorseCon_4(Collider2D o)
     {
         rankText.gameObject.SetActive(true);
-        rankText.text = "4번 말 승리!";
+        rankText.text = "4번 용 승리!";
         gameObject.GetComponent<CrashScripts>().enabled = false;
         wonHorse = 4;
         minigameEnder.End();

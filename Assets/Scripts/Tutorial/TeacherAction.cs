@@ -12,6 +12,10 @@ public abstract class TeacherAction : ScriptableObject
         this.game = gameManager as TutorialGameManager;
         this.acter = acter;
     }
+
+    public virtual void Init()
+    {
+    }
     
     public virtual void Act()
     {

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96936704084c28e66806f34e9e7a72ee, type: 3}
+  m_Name: Game3Event
+  m_EditorClassIdentifier: 
+  headerSprite: {fileID: 21300000, guid: 8a6ed7079dd1942d0a00d51cc8e75ad6, type: 3}
+  header: "\uC720\uBA85 \uBC30\uC6B0 \uCC38\uC5EC \uB8E8\uBA38"
+  description: "\uC644\uC804 \uC2E0\uC791 \uC720\uBA85 \uBC30\uC6B0 \uC6A9\uC544\uB204
+    \uB9AC\uBE0C\uB808\uC2A4 \uCC38\uC5EC \uB8E8\uBA38"
+  buttonText: 
+  type: 1
+  rate: 0.6

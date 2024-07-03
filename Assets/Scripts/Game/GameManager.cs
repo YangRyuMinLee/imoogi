@@ -61,6 +61,7 @@ public class GameManager : GameManagerBase
             }
         }
         else {
+            Debug.Log(SceneTransitionDataStorage.data.moneyIncrease);
             LoadStatic();
             game.cash += SceneTransitionDataStorage.data.moneyIncrease;
         }
