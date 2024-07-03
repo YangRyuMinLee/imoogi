@@ -846,7 +846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7932812798918154490, guid: 905d1782b4686eef1b8fdead998ef331, type: 3}
       propertyPath: m_text
-      value: "\uBBF8\uB2C8\uAC8C\uC784"
+      value: "\uACBD\uB8E1"
       objectReference: {fileID: 0}
     - target: {fileID: 7932812798918154490, guid: 905d1782b4686eef1b8fdead998ef331, type: 3}
       propertyPath: m_HorizontalAlignment
